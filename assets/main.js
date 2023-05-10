@@ -95,58 +95,10 @@ dotsNav.addEventListener('click', e => {
 
 
 
-//////////////  section id="wrapper_slider"
-const sliders = document.querySelectorAll('.container_slider');
-const nextBtn = document.querySelectorAll('.slider_btn-right');
-const prevBtn = document.querySelectorAll('.slider_btn-left');
-
-sliders.forEach((item, i) => {
-    let sliderDimension = item.getBoundingClientRect();
-    let sliderWidth = sliderDimension.width;
-
-    nextBtn[i].addEventListener('click', () => {
-        item.scrollLeft += sliderWidth;
-    })
-    prevBtn[i].addEventListener('click', () => {
-        item.scrollLeft -= sliderWidth;
-    })
-})
-
-let isDraggingStart = false, previousPageX, previousScrollLeft;
-
-const draggingStart = (e) => {
-    //update global variables value on mouse down event
-    isDraggingStart = true;
-    previousPageX = e.pageX;
-    previousScrollLeft = sliders.scrollLeft;
-}
-
-const doDragging = (e) => {
-    // scrolling images to left according to mouse pointer
-    if (!isDraggingStart) return;
-    e.preventDefault();
-    sliders.classList.add('doDragging');
-    let positionDiffer = e.pageX - previousPageX;
-    sliders.scrollLeft = previousScrollLeft - positionDiffer;
-    hideShowIcons();
-}
-
-const stopDragging = () => {
-    isDraggingStart = false;
-    sliders.classList.remove('doDragging');
-}
-
-//sliders.addEventListener('mousedown', draggingStart);
-//sliders.addEventListener('mousemove', doDragging);
-//sliders.addEventListener('mouseup', stopDragging);
-//sliders.addEventListener('mouseleave', stopDragging);
-
-
-
 
 
 ////////////  section id="wrapperSlider"
-const slider = document.querySelector('.slider');
+const slider = document.querySelector('.container_slider');
 firstImg = slider.querySelectorAll('img')[0];
 arrowIcons = document.querySelectorAll('.section_slider i');
 
@@ -171,7 +123,7 @@ const showHideIcons = () => {
 
 arrowIcons.forEach(icon => {
     icon.addEventListener("click", () => {
-        let firstImgWidth = firstImg.clientWidth + 25;  //getting first img width & adding 1rem margin value
+        let firstImgWidth = firstImg.clientWidth + 22;  //getting first img width & adding 2rem margin value
 
         //if clicked icon is left, reduce width value from slider scroll left else add to it
         //slider.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;   //the same formula: 

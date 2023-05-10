@@ -382,10 +382,6 @@ h1 {
         width: 95%;
     }
 
-    .project-name-btn {
-        width: 95%;
-    }
-
     .partner {
         gap: 5rem;
         height: 15rem;
@@ -586,10 +582,6 @@ h1 {
         width: 94%;
     }
 
-    .project-name-btn {
-        width: 94%;
-    }
-
     .slider img {
         height: 300px;
         width: calc(100%/2);
@@ -685,6 +677,10 @@ h1 {
 
     .section_slider h1 {
         font-size: 32px;
+    }
+
+    .slider_btn i {
+        top: 50%;
     }
 
     #news h2 {
@@ -838,6 +834,10 @@ h1 {
         font-size: 25px;
     }
 
+    .slider_btn i {
+        top: 52%;
+    }
+
     #news h1 {
         font-size: 32px;
     }
@@ -875,10 +875,6 @@ h1 {
     }
 
     .thMeter_raised-proj {
-        width: 95%;
-    }
-
-    .project-name-btn {
         width: 95%;
     }
 
@@ -1092,19 +1088,21 @@ h1 {
 
 .project-name-btn {
     position: absolute;
-    bottom: 0.5rem;
     left: 50%;
+    bottom: 0;
     transform: translateX(-50%);
     height: 50%;
-    border-radius: 7px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
     border: none;
     background-color: white;
-    transition: 0.5s;
+    transition: 0.3s;
     cursor: pointer;
     opacity: 15%;
     font-size: 32px;
     font-weight: 600;
     color: #4257A6;
+    width: 100%;
 }
 
 .project:hover .project-name-btn {
@@ -1202,19 +1200,21 @@ h1 {
     z-index: 1;
 }
 
+.slider_btn {
+    display: contents;
+}
 
 .slider_btn i {
     font-size: 2.5rem;
     background: white;
-    top: 50%;
     cursor: pointer;
-    position: absolute;
     border: #4257A6 solid 1px;
     box-shadow: 3px 3px 4px rgb(64 64 64 /50%);
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    z-index: 1;
+    position: absolute;
+    line-height: 1.2;
 }
 
 .slider {
