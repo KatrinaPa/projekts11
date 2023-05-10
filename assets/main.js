@@ -78,6 +78,11 @@ nextButton.addEventListener('click', e => {
     hideShowArrows(slides, prevButton, nextButton, nextIndex);
 })
 
+// remove click event from arrows
+// create a 5 second interval
+// in the interval callback, call next slide
+// if last slide, show first slide
+
 dotsNav.addEventListener('click', e => {
     const targetDot = e.target.closest('button');
     if (!targetDot) return;
@@ -108,7 +113,7 @@ const showHideIcons = () => {
     //showing & hiding prev/next icon according to slider scroll left value
     let scrollWidth = slider.scrollWidth - slider.clientWidth;   //max scrollable width
 
-    //arrowIcons[0].style.display = slider.scrollLeft == 0 ? "none" : "block";   //the same formula: 
+    //arrowIcons[0].style.display = slider.scrollLeft == 0 ? "none" : "block";   //the same formula:
     if (slider.scrollLeft == 0) {
         arrowIcons[0].style.display = "none";
     } else {
@@ -126,7 +131,7 @@ arrowIcons.forEach(icon => {
         let firstImgWidth = firstImg.clientWidth + 22;  //getting first img width & adding 2rem margin value
 
         //if clicked icon is left, reduce width value from slider scroll left else add to it
-        //slider.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;   //the same formula: 
+        //slider.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;   //the same formula:
         if (icon.id == "left") {
             slider.scrollLeft -= firstImgWidth;
         } else {
