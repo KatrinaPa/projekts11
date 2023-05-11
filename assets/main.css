@@ -218,6 +218,15 @@ h1 {
     z-index: 1;
 }
 
+.carousel_btn.fa-angle-left {
+    display: none;
+    color: white;
+}
+
+.carousel_btn.fa-angle-right {
+    color: white;
+}
+
 .is-hidden {
     display: none;
 }
@@ -295,17 +304,15 @@ h1 {
 #ziedot {
     background-color: #4257A6;
     color: white;
-    border: none;
     font-size: 20px;
-    font-weight: 600;
-    height: 2.6rem;
+    text-align: center;
+    padding: 0.6rem 0;
     border-radius: 10px;
     width: 13rem;
     cursor: pointer;
-    grid-column: 3/3;
 }
 
-.buttonVairak {
+.learn-more {
     background-color: transparent;
     color: #615c5c;
     border: none;
@@ -402,7 +409,7 @@ h1 {
         font-size: 25px;
     }
 
-    .button-wrapper {
+    .link_more {
         display: flex;
         justify-content: flex-end;
         padding-top: 1rem;
@@ -570,7 +577,7 @@ h1 {
     }
 
     .project {
-        width: 18rem;
+        width: 20rem;
         margin-right: 1.8rem;
     }
 
@@ -654,7 +661,7 @@ h1 {
         font-size: 22px;
     }
 
-    .button-wrapper {
+    .link_more {
         display: flex;
         justify-content: flex-end;
     }
@@ -680,7 +687,9 @@ h1 {
     }
 
     .slider_btn i {
-        top: 50%;
+        font-size: 2.1rem;
+        width: 2.8rem;
+        height: 2.8rem;
     }
 
     #news h2 {
@@ -799,10 +808,6 @@ h1 {
         padding: 0 2rem 6rem 2rem;
     }
 
-    #ziedot {
-        height: 3rem;
-    }
-
     .why_donate {
         text-align: left;
         display: flex;
@@ -835,7 +840,9 @@ h1 {
     }
 
     .slider_btn i {
-        top: 52%;
+        font-size: 1.8rem;
+        width: 2.2rem;
+        height: 2.2rem;
     }
 
     #news h1 {
@@ -1037,8 +1044,6 @@ h1 {
 .section_slider {
     padding: 5rem;
     background-color: #ffffff;
-    border-top: #000000 solid 1px;
-    border-bottom: #000000 solid 1px;
     font-family: 'Roboto';
 }
 
@@ -1069,7 +1074,6 @@ h1 {
 .project {
     flex: 0 0 auto;
     height: 100%;
-    cursor: pointer;
 }
 
 .project-image {
@@ -1078,22 +1082,12 @@ h1 {
     overflow: hidden;
 }
 
-.project-name {
-    position: absolute;
-    right: 35%;
-    top: 45%;
-    font-size: 36px;
-    color: white;
-}
-
 .project-name-btn {
     position: absolute;
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
-    height: 50%;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
+    height: 100%;
     border: none;
     background-color: white;
     transition: 0.3s;
@@ -1105,12 +1099,34 @@ h1 {
     width: 100%;
 }
 
-.project:hover .project-name-btn {
+.project-name {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    border: none;
+    background-color: white;
+    transition: 0.3s;
+    opacity: 15%;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    color: #4257A6;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.project:hover .project-name {
     opacity: 0.8;
     color: #4257A6;
 }
 
-.project-name-btn:hover {
+.project-name:hover {
     background-color: white;
     color: #000000;
 }
@@ -1130,29 +1146,29 @@ h1 {
 }
 
 .thMeter-proj {
-    background-color: rgb(255 255 255 / 80%);
+    background-color: rgb(255 204 0 / 90%);
     font-size: 16px;
     color: #4257A6;
     padding: 0.5rem 0 0.5rem 1rem;
     border: none;
     border-radius: 7px;
     font-weight: 600;
+    z-index: 1;
 }
 
 .btn_ziedot-proj {
     margin-top: 0.9rem;
 }
 
-#ziedot-proj {
+.ziedot-proj {
     background-color: #4257A6;
     color: white;
-    border: none;
     font-size: 20px;
-    font-weight: 600;
-    height: 2.2rem;
+    text-decoration: none;
+    padding: 0.4rem 0;
     border-radius: 10px;
-    width: 100%;
-    position: relative;
+    display: flex;
+    justify-content: center;
     cursor: pointer;
 }
 
@@ -1160,16 +1176,16 @@ h1 {
     margin-top: 0.5rem;
 }
 
-#more {
+.more {
     background-color: transparent;
     color: #4257A6;
     border: #4257A6 solid 1px;
     font-size: 20px;
-    font-weight: 600;
-    height: 2.2rem;
+    text-decoration: none;
+    padding: 0.4rem 0;
     border-radius: 10px;
-    width: 100%;
-    position: relative;
+    display: flex;
+    justify-content: center;
     cursor: pointer;
 }
 
@@ -1189,13 +1205,13 @@ h1 {
     position: absolute;
 }
 
-.fa-angle-left {
+.slider_btn.fa-angle-left {
     display: none;
     color: #4257A6;
     z-index: 1;
 }
 
-.fa-angle-right {
+.slider_btn.fa-angle-right {
     color: #4257A6;
     z-index: 1;
 }
@@ -1205,16 +1221,16 @@ h1 {
 }
 
 .slider_btn i {
-    font-size: 2.5rem;
     background: white;
-    cursor: pointer;
+    color: #4257A6;
     border: #4257A6 solid 1px;
     box-shadow: 3px 3px 4px rgb(64 64 64 /50%);
-    width: 3rem;
-    height: 3rem;
+    top: 40%;
     border-radius: 50%;
     position: absolute;
-    line-height: 1.2;
+    line-height: 1.3;
+    z-index: 1;
+    cursor: pointer;
 }
 
 .slider {
