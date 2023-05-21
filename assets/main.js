@@ -11,10 +11,14 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     navMenu.classList.remove("active");
 }))
 
+
+
+
+
+
+//SLIDES with dots navigation
 const track = document.querySelector('.carousel_track');
 const slides = Array.from(track.children);
-const nextButton = document.querySelector('.carousel_btn-right');
-const prevButton = document.querySelector('.carousel_btn-left');
 const dotsNav = document.querySelector('.carousel_nav');
 const dots = Array.from(dotsNav.children);
 const slideWidth = slides[0].getBoundingClientRect().width;
@@ -22,7 +26,6 @@ const slideWidth = slides[0].getBoundingClientRect().width;
 //arange slides next to one other
 //slides[0].style.left = slideWidth * 0 + 'px';
 //slides[3].style.left = slideWidth * 3 + 'px';
-
 const setSlidePosition = (slide, index) => {
     slide.style.left = slideWidth * index + 'px';
 }
@@ -39,50 +42,6 @@ const updateDots = (currentDot, targetDot) => {
     targetDot.classList.add('current_slide');
 }
 
-const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
-    if (targetIndex === 0) {
-        prevButton.classList.add('is-hidden');
-        nextButton.classList.remove('is-hidden');
-    } else if (targetIndex === slides.length - 1) {
-        prevButton.classList.remove('is-hidden');
-        nextButton.classList.add('is-hidden');
-    } else {
-        prevButton.classList.remove('is-hidden');
-        nextButton.classList.remove('is-hidden');
-    }
-}
-
-//when click left, move slides to L
-prevButton.addEventListener('click', e => {
-    const currentSlide = track.querySelector('.current_slide');
-    const prevSlide = currentSlide.previousElementSibling;
-    const currentDot = dotsNav.querySelector('.current_slide');
-    const prevDot = currentDot.previousElementSibling;
-    const prevIndex = slides.findIndex(slide => slide === prevSlide);
-
-    moveToSlide(track, currentSlide, prevSlide);
-    updateDots(currentDot, prevDot);
-    hideShowArrows(slides, prevButton, nextButton, prevIndex);
-})
-
-//when click right, move slides to R
-nextButton.addEventListener('click', e => {
-    const currentSlide = track.querySelector('.current_slide');
-    const nextSlide = currentSlide.nextElementSibling;
-    const currentDot = dotsNav.querySelector('.current_slide');
-    const nextDot = currentDot.nextElementSibling;
-    const nextIndex = slides.findIndex(slide => slide === nextSlide);
-
-    moveToSlide(track, currentSlide, nextSlide);
-    updateDots(currentDot, nextDot);
-    hideShowArrows(slides, prevButton, nextButton, nextIndex);
-})
-
-// remove click event from arrows
-// create a 5 second interval
-// in the interval callback, call next slide
-// if last slide, show first slide
-
 dotsNav.addEventListener('click', e => {
     const targetDot = e.target.closest('button');
     if (!targetDot) return;
@@ -94,76 +53,30 @@ dotsNav.addEventListener('click', e => {
 
     moveToSlide(track, currentSlide, targetSlide);
     updateDots(currentDot, targetDot);
-    hideShowArrows(slides, prevButton, nextButton, targetIndex);
 })
 
+// remove click event from arrows
+// create a 5 second interval
+// in the interval callback, call next slide
+// if last slide, show first slide
 
 
 
+let slideIndex = 0;
+const showSlides = () => {
+    const slidesAll = document.getElementsByClassName("carousel_slide");
+    for (let i = 0; i < slidesAll.length; i++) {
+        slidesAll[i].style.display = 'none';
+    }
+    slideIndex++;
+    if (slideIndex > slidesAll.length) {
+        slideIndex = 1;
+    }
 
+    slidesAll[slideIndex - 1].style.display = 'block';
 
-////////////  section id="wrapperSlider"
-const slider = document.querySelector('.container_slider');
-firstImg = slider.querySelectorAll('img')[0];
-arrowIcons = document.querySelectorAll('.section_slider i');
+    setTimeout(showSlides, 1000);
+};
 
-let isDragStart = false, prevPageX, prevScrollLeft;
+//showSlides();
 
-const showHideIcons = () => {
-    //showing & hiding prev/next icon according to slider scroll left value
-    let scrollWidth = slider.scrollWidth - slider.clientWidth;   //max scrollable width
-
-    //arrowIcons[0].style.display = slider.scrollLeft == 0 ? "none" : "block";   //the same formula:
-    if (slider.scrollLeft == 0) {
-        arrowIcons[0].style.display = "none";
-    } else {
-        arrowIcons[0].style.display = "block";
-    };
-    if (slider.scrollLeft == scrollWidth) {
-        arrowIcons[1].style.display = "none";
-    } else {
-        arrowIcons[1].style.display = "block";
-    };
-}
-
-arrowIcons.forEach(icon => {
-    icon.addEventListener("click", () => {
-        let firstImgWidth = firstImg.clientWidth + 22;  //getting first img width & adding 2rem margin value
-
-        //if clicked icon is left, reduce width value from slider scroll left else add to it
-        //slider.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;   //the same formula:
-        if (icon.id == "left") {
-            slider.scrollLeft -= firstImgWidth;
-        } else {
-            slider.scrollLeft += firstImgWidth;
-        }
-        setTimeout(() => showHideIcons(), 60); // show after 60ms
-    })
-})
-
-const dragStart = (e) => {
-    //update global variables value on mouse down event
-    isDragStart = true;
-    prevPageX = e.pageX;
-    prevScrollLeft = slider.scrollLeft;
-}
-
-const dragging = (e) => {
-    // scrolling images to left according to mouse pointer
-    if (!isDragStart) return;
-    e.preventDefault();
-    slider.classList.add('dragging');
-    let positionDiff = e.pageX - prevPageX;
-    slider.scrollLeft = prevScrollLeft - positionDiff;
-    showHideIcons();
-}
-
-const dragStop = () => {
-    isDragStart = false;
-    slider.classList.remove('dragging');
-}
-
-slider.addEventListener('mousedown', dragStart);
-slider.addEventListener('mousemove', dragging);
-slider.addEventListener('mouseup', dragStop);
-slider.addEventListener('mouseleave', dragStop);
