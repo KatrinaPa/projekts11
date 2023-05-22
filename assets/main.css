@@ -481,7 +481,10 @@ h1_p_wrapper-2 {
 
 .container_slider::-webkit-scrollbar {
     display: none;
+}
 
+#project-cars {
+    display: none;
 }
 
 .project-image {
@@ -547,6 +550,19 @@ h1_p_wrapper-2 {
     cursor: pointer;
 }
 
+#project-name_cars-2 {
+    font-family: Poppins;
+    font-weight: 600;
+    text-align: center;
+    color: #1E1F24;
+    font-size: 39px;
+    text-decoration: none;
+    bottom: 3rem;
+    width: 100%;
+    position: absolute;
+    cursor: pointer;
+}
+
 #project-name_support,
 #project-name_drones,
 #project-name_npa,
@@ -574,6 +590,15 @@ h1_p_wrapper-2 {
 }
 
 .thMeter_raised-proj {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.project-about-p {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -863,6 +888,11 @@ h1_p_wrapper-2 {
         bottom: 4.5rem;
     }
 
+    .project-about-p {
+        top: 1rem;
+        margin: 0 1rem;
+        color: #fff
+    }
 
     .thMeter_raised p {
         font-size: 16px;
@@ -921,6 +951,10 @@ h1_p_wrapper-2 {
     }
 
     .thMeter_raised-proj {
+        width: 95%;
+    }
+
+    .project-about-p {
         width: 95%;
     }
 
@@ -1095,6 +1129,10 @@ h1_p_wrapper-2 {
     }
 
     .thMeter_raised-proj {
+        bottom: 3.5rem;
+    }
+
+    .project-about-p {
         bottom: 3.5rem;
     }
 
@@ -1335,6 +1373,10 @@ h1_p_wrapper-2 {
         bottom: 4.5rem;
     }
 
+    .project-about-p {
+        bottom: 4.5rem;
+    }
+
     .thMeter_raised p {
         font-size: 14px;
         font-weight: 600;
@@ -1455,6 +1497,22 @@ h1_p_wrapper-2 {
     }
 
     .project-name-2 {
+        height: 95.5%;
+    }
+
+    .pproject-about-top_cover {
+        height: 74%;
+    }
+
+    .project-about-bottom_cover {
+        height: 95.5%;
+    }
+
+    .project-about-top {
+        height: 74%;
+    }
+
+    .project-about-bottom {
         height: 95.5%;
     }
 
@@ -1640,6 +1698,10 @@ h1_p_wrapper-2 {
     }
 
     .thMeter_raised-proj {
+        width: 95%;
+    }
+
+    .project-about-p {
         width: 95%;
     }
 
