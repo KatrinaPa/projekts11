@@ -12,16 +12,17 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 }))
 
 
-
-
-
-
 //SLIDES with dots navigation
 const track = document.querySelector('.carousel_track');
 const slides = Array.from(track.children);
 const dotsNav = document.querySelector('.carousel_nav');
 const dots = Array.from(dotsNav.children);
 const slideWidth = slides[0].getBoundingClientRect().width;
+
+
+let slideIndex = 0;
+let currentDisplayIndex = slideIndex;
+let nextDisplayIndex = currentDisplayIndex + 1;
 
 //arange slides next to one other
 //slides[0].style.left = slideWidth * 0 + 'px';
@@ -42,41 +43,53 @@ const updateDots = (currentDot, targetDot) => {
     targetDot.classList.add('current_slide');
 }
 
+const checkIndexesAreNotOutOfBounds = () => {
+    if (nextDisplayIndex === slides.length) {
+        nextDisplayIndex = 0;
+    }
+
+    if (currentDisplayIndex === slides.length) {
+        currentDisplayIndex = 0;
+    }
+}
+
 dotsNav.addEventListener('click', e => {
     const targetDot = e.target.closest('button');
     if (!targetDot) return;
 
+    const clickedDotIndex = dots.findIndex(dot => dot === targetDot);
+
+    currentDisplayIndex = clickedDotIndex;
+    nextDisplayIndex = currentDisplayIndex + 1;
+
+    checkIndexesAreNotOutOfBounds();
+
     const currentSlide = track.querySelector('.current_slide');
     const currentDot = dotsNav.querySelector('.current_slide');
-    const targetIndex = dots.findIndex(dot => dot === targetDot);
-    const targetSlide = slides[targetIndex];
 
-    moveToSlide(track, currentSlide, targetSlide);
-    updateDots(currentDot, targetDot);
+    moveToSlide(track, currentSlide, slides[currentDisplayIndex]);
+    updateDots(currentDot, dots[clickedDotIndex]);
 })
 
-// remove click event from arrows
-// create a 5 second interval
-// in the interval callback, call next slide
-// if last slide, show first slide
-
-
-
-let slideIndex = 0;
 const showSlides = () => {
-    const slidesAll = document.getElementsByClassName("carousel_slide");
-    for (let i = 0; i < slidesAll.length; i++) {
-        slidesAll[i].style.display = 'none';
-    }
-    slideIndex++;
-    if (slideIndex > slidesAll.length) {
-        slideIndex = 1;
-    }
 
-    slidesAll[slideIndex - 1].style.display = 'block';
+    moveToSlide(track, slides[currentDisplayIndex], slides[nextDisplayIndex]);
+    updateDots(dots[currentDisplayIndex], dots[nextDisplayIndex]);
 
-    setTimeout(showSlides, 1000);
+    currentDisplayIndex++;
+    nextDisplayIndex++;
+
+    checkIndexesAreNotOutOfBounds();
 };
 
-//showSlides();
 
+// let interval;
+//
+// const launchSlideshow = () => {
+//     let interval = setInterval(() => showSlides(), 5000);
+// }
+//
+// launchSlideshow();
+//
+// pauseButton.onClick(clearInterval(interval));
+// playButton.onClick(launchSlideshow())

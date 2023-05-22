@@ -494,19 +494,27 @@ h1_p_wrapper-2 {
 .project-name-1_cover {
     position: absolute;
     top: 0;
-    background: linear-gradient(168deg, #0066cc 57%, transparent 0%);
+    background: linear-gradient(168deg, #000 57%, transparent 0%);
     transition: 0.3s;
     opacity: 55%;
     width: 100%;
 }
 
+.project:hover .project-name-1_cover {
+    background: linear-gradient(168deg, #0066cc 57%, transparent 0%);
+}
+
 .project-name-2_cover {
     position: absolute;
     bottom: 0;
-    background: linear-gradient(348deg, #FFCC00 57%, transparent 0%);
+    background: linear-gradient(348deg, #fff 57%, transparent 0%);
     transition: 0.3s;
     opacity: 55%;
     width: 100%;
+}
+
+.project:hover .project-name-2_cover {
+    background: linear-gradient(348deg, #FFCC00 57%, transparent 0%);
 }
 
 .project-name-1 {
