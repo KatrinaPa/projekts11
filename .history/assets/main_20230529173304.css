@@ -1291,7 +1291,6 @@ h1_p_wrapper-2 {
 
     .doned-h h1 {
         font-size: 36px;
-        margin-top: 0;
     }
 
     .doned-h h5 {
@@ -1650,27 +1649,10 @@ h1_p_wrapper-2 {
 
     .partneri {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        margin-top: 3rem;
-        gap: 2rem;
-    }
-
-    .partneri div {
-        gap: 3rem;
-    }
-
-    .partneri div img {
-        width: 20%;
-    }
-
-    .partneri div:first-child img {
-        width: 45%;
-    }
-
-    #madara_logo {
-        width: 45%;
+        margin-top: 1rem;
     }
 
     #kelmeni_logo {
