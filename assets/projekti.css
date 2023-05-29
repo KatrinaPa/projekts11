@@ -1,21 +1,21 @@
 #wrapper_project {
-    background-color: #ffcc00;
+    background-color: #f4f4f4;
     font-family: 'Roboto';
 }
 
-.section_project {
-    padding: 2rem 7rem 2rem 7rem;
-}
+.section_project {}
 
 h1 {
-    font-size: 49px;
-    line-height: 60px;
+    font-size: 37px;
+    line-height: 50px;
 }
 
 .project-nav {
     display: flex;
     flex-direction: row;
-    margin-bottom: 1rem;
+    padding: 1.1rem 7rem 0 7rem;
+    background-color: #fff7d4;
+    /* background: RGB(255, 204, 0, 0.3);*/
 }
 
 .project-nav a {
@@ -55,7 +55,8 @@ h1 {
 
 .carousel_project {
     position: relative;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
+    margin: 2rem 7rem 2rem 7rem;
 }
 
 .carousel_proj_btn {
@@ -73,7 +74,7 @@ h1 {
 
 .donate_project-left img {
     width: 100%;
-    height: 14rem;
+    height: 13rem;
     object-fit: cover;
 }
 
@@ -130,7 +131,7 @@ h1 {
 
 .thMeter-wrapper {
     width: 100%;
-    background-color: #1E1F24;
+    background-color: #f4f4f4;
 }
 
 #thMeter-proj-support,
@@ -141,6 +142,7 @@ h1 {
 #thMeter-proj-xbank {
     background-color: #ffcc00;
     color: #1E1F24;
+    font-size: 14px;
 }
 
 .thMeter_raised p {
@@ -160,7 +162,7 @@ h1 {
 
 .share div {
     display: flex;
-    gap: 0.5rem;
+    gap: 1.3rem;
 }
 
 .to-project {
@@ -171,7 +173,7 @@ h1 {
     font-size: 16px;
     color: #1E1F24;
     opacity: 80%;
-    margin-top: 2rem;
+    margin: 2rem 7rem 2rem 7rem;
 }
 
 .previous {
@@ -223,6 +225,11 @@ h1 {
     text-align: right;
 }
 
+.yellow-bottom {
+    height: 0.4rem;
+    background-color: #ffcc00;
+}
+
 @media (min-width: 1280px) {
 
     .wrapper_thMeter_img {
@@ -238,11 +245,12 @@ h1 {
 @media screen and (max-width: 1279px) {
 
     .section_project {
-        padding: 2rem 1rem 2rem 1rem;
+        padding: 0;
+        margin: 0;
     }
 
     .project-nav {
-        margin-left: 2rem;
+        padding: 1.1rem 2rem 0 5rem;
     }
 
     .wrapper_donate_project {
@@ -255,7 +263,7 @@ h1 {
     }
 
     .carousel_project {
-        margin: 0 2rem;
+        margin: 0px 5rem;
     }
 
     .carousel_proj_btn i {
@@ -307,21 +315,19 @@ h1 {
         max-width: 480px;
     }
 
-    #wrapper_project {
-        padding: 2rem;
-    }
+    #wrapper_project {}
 
     .section_project {
         padding-bottom: 0;
     }
 
     .project-nav {
-        margin: 0;
+        padding: 1.1rem 2rem 0 2rem;
     }
 
     .carousel_project {
         margin: 0;
-        padding: 0 1rem;
+        padding: 2rem;
     }
 
     .carousel_project h1 {
