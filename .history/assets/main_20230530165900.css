@@ -186,21 +186,16 @@ h1 {
 
 .pauseButton {
     display: flex;
-    gap: 0.4rem;
-    z-index: 1;
-    position: absolute;
-    right: 4.5rem;
-    bottom: 2rem;
 }
 
 .pause {
-    width: 0.35rem;
-    height: 1.5rem;
+    width: 5px;
+    height: 24px;
     border-radius: 10px;
     margin: 0.2rem auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #ffffff;
+    background-color: #f4f4f4;
 }
 
 .carousel_track {

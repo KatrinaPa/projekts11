@@ -82,16 +82,17 @@ const showSlides = () => {
     checkIndexesAreNotOutOfBounds();
 };
 
-//setInterval(() => showSlides(), 5000)
+setInterval(() => showSlides(), 5000)
+
+const pauseButton = document.querySelector(".pauseButton");
 
 let interval;
 
 const launchSlideshow = () => {
     let interval = setInterval(() => showSlides(), 5000);
 }
-launchSlideshow();
 
-const pauseButton = document.querySelector(".pauseButton");
+launchSlideshow();
 
 pauseButton.onClick(clearInterval(interval));
 playButton.onClick(launchSlideshow())

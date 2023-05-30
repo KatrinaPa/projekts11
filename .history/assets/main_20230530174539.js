@@ -93,5 +93,5 @@ launchSlideshow();
 
 const pauseButton = document.querySelector(".pauseButton");
 
-pauseButton.onClick(clearInterval(interval));
+pauseButton.click(clearInterval(interval));
 playButton.onClick(launchSlideshow())

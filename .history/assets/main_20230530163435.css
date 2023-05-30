@@ -184,25 +184,6 @@ h1 {
     overflow: hidden;
 }
 
-.pauseButton {
-    display: flex;
-    gap: 0.4rem;
-    z-index: 1;
-    position: absolute;
-    right: 4.5rem;
-    bottom: 2rem;
-}
-
-.pause {
-    width: 0.35rem;
-    height: 1.5rem;
-    border-radius: 10px;
-    margin: 0.2rem auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #ffffff;
-}
-
 .carousel_track {
     padding: 0;
     margin: 0;
@@ -347,6 +328,11 @@ h1_p_wrapper-2 {
 
 .support-span {
     color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    left: 5rem;
+    padding: 0.45rem 0 0 2rem;
+    position: absolute;
 }
 
 #thMeter-nmp {
@@ -358,6 +344,11 @@ h1_p_wrapper-2 {
 
 .h1_p_wrapper .nmp-span {
     color: #1E1F24;
+    font-size: 18px;
+    font-weight: 600;
+    left: 5rem;
+    padding: 0.45rem 0 0 2rem;
+    position: absolute;
 }
 
 #thMeter-drones {
@@ -369,6 +360,11 @@ h1_p_wrapper-2 {
 
 .drones-span {
     color: #FFCC00;
+    font-size: 18px;
+    font-weight: 600;
+    left: 5rem;
+    padding: 0.45rem 0 0 2rem;
+    position: absolute;
 }
 
 #thMeter-cars {
@@ -380,19 +376,14 @@ h1_p_wrapper-2 {
 
 .h1_p_wrapper .cars-span {
     color: #1E1F24;
-}
-
-.support-span,
-.nmp-span,
-.drones-span,
-.cars-span {
-    color: #ffffff;
     font-size: 18px;
     font-weight: 600;
     left: 5rem;
     padding: 0.45rem 0 0 2rem;
     position: absolute;
 }
+
+
 
 .btn_ziedot {
     display: flex;

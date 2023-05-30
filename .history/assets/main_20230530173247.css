@@ -200,7 +200,7 @@ h1 {
     margin: 0.2rem auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #ffffff;
+    background-color: red;
 }
 
 .carousel_track {

@@ -184,25 +184,6 @@ h1 {
     overflow: hidden;
 }
 
-.pauseButton {
-    display: flex;
-    gap: 0.4rem;
-    z-index: 1;
-    position: absolute;
-    right: 4.5rem;
-    bottom: 2rem;
-}
-
-.pause {
-    width: 0.35rem;
-    height: 1.5rem;
-    border-radius: 10px;
-    margin: 0.2rem auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #ffffff;
-}
-
 .carousel_track {
     padding: 0;
     margin: 0;
@@ -340,35 +321,25 @@ h1_p_wrapper-2 {
 
 #thMeter-support {
     background-color: #1E1F24;
+    color: #ffffff;
     width: 68%;
     height: 100%;
     border: none;
 }
 
-.support-span {
-    color: #ffffff;
+#thMeter-drones {
+    background-color: #1E1F24;
+    color: #FFCC00;
+    height: 100%;
+    border: none;
 }
 
 #thMeter-nmp {
     background-color: #ffcc00;
+    color: #1E1F24;
     width: 92%;
     height: 100%;
     border: none;
-}
-
-.h1_p_wrapper .nmp-span {
-    color: #1E1F24;
-}
-
-#thMeter-drones {
-    background-color: #1E1F24;
-    height: 100%;
-    width: 18%;
-    border: none;
-}
-
-.drones-span {
-    color: #FFCC00;
 }
 
 #thMeter-cars {
@@ -376,22 +347,12 @@ h1_p_wrapper-2 {
     width: 79%;
     height: 100%;
     border: none;
-}
-
-.h1_p_wrapper .cars-span {
     color: #1E1F24;
 }
 
-.support-span,
-.nmp-span,
-.drones-span,
-.cars-span {
-    color: #ffffff;
+.thMeter_raised span {
     font-size: 18px;
     font-weight: 600;
-    left: 5rem;
-    padding: 0.45rem 0 0 2rem;
-    position: absolute;
 }
 
 .btn_ziedot {
