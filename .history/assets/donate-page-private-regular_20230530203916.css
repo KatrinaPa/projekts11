@@ -1,0 +1,25 @@
+#one-time-donate {
+    background-color: #d9d9d9;
+
+}
+
+#regular-donate {
+    background-color: #FFDB4D;
+    font-weight: 600;
+    cursor: auto;
+}
+
+#individual-donate {
+    background-color: #FFDB4D;
+    font-weight: 600;
+    cursor: auto;
+}
+
+#legal-donate {
+    background-color: #d9d9d9;
+}
+
+.legal:hover,
+.one-time:hover {
+    background-color: #ffcc00;
+}
