@@ -72,9 +72,6 @@ dotsNav.addEventListener('click', e => {
 })
 
 const showSlides = () => {
-
-    console.log("current", currentDisplayIndex);
-    console.log("next", nextDisplayIndex);
     moveToSlide(track, slides[currentDisplayIndex], slides[nextDisplayIndex]);
     updateDots(dots[currentDisplayIndex], dots[nextDisplayIndex]);
 
