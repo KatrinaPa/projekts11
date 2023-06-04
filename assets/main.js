@@ -72,7 +72,6 @@ dotsNav.addEventListener('click', e => {
 })
 
 const showSlides = () => {
-
     moveToSlide(track, slides[currentDisplayIndex], slides[nextDisplayIndex]);
     updateDots(dots[currentDisplayIndex], dots[nextDisplayIndex]);
 
@@ -81,8 +80,6 @@ const showSlides = () => {
 
     checkIndexesAreNotOutOfBounds();
 };
-
-setInterval(() => showSlides(), 5000)
 
 let interval;
 
@@ -93,5 +90,5 @@ launchSlideshow();
 
 const pauseButton = document.querySelector(".pauseButton");
 
-pauseButton.onClick(clearInterval(interval));
-playButton.onClick(launchSlideshow())
+// pauseButton.onClick(clearInterval(interval));
+// playButton.onClick(launchSlideshow())
