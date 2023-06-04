@@ -496,6 +496,28 @@ h1_p_wrapper-2 {
     padding: 6rem 5.75rem 5rem 5.75rem;
 }
 
+.panel {
+    max-width: none;
+}
+
+section {
+    padding: 0;
+    margin: 0;
+}
+
+.section-content  {
+    display: flex;
+    max-width: 1280px;
+    flex-direction: column;
+    margin: 6rem auto;
+}
+
+@media (min-width: 1280px) {
+    section .project {
+        width: unset;
+    }
+}
+
 .slider_h1_p {
     display: flex;
     flex-direction: column;
