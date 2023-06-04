@@ -82,9 +82,9 @@ const showSlides = () => {
     checkIndexesAreNotOutOfBounds();
 };
 
-setInterval(() => showSlides(), 5000)
+//setInterval(() => showSlides(), 5000)
 
-let interval;
+//let interval;
 
 const launchSlideshow = () => {
     let interval = setInterval(() => showSlides(), 5000);

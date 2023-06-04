@@ -777,9 +777,9 @@ h1_p_wrapper-2 {
 
 .support_logo {
     position: absolute;
-    top: 11.4rem;
-    left: 25.4rem;
-    gap: 2rem;
+    top: 12.9rem;
+    left: 25.6rem;
+    gap: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -804,12 +804,12 @@ h1_p_wrapper-2 {
 }
 
 #lv-AM_logo {
-    width: 62%;
+    width: 90%;
     cursor: pointer;
 }
 
 #ukr-vestn_logo {
-    width: 48%;
+    width: 50%;
     cursor: pointer;
 }
 
@@ -1361,58 +1361,48 @@ h1_p_wrapper-2 {
         margin: 1rem 0 1rem 0;
     }
 
-    .support-what {
-        align-items: flex-start;
-    }
-
-    .support-what img:first-child {
-        width: 60%;
-        margin: 4rem 0 0 2rem;
+    .support-what img {
+        width: 70%;
+        margin-top: 1rem;
     }
 
     .human-support {
         top: 0rem;
         left: 0rem;
-        width: 45%;
+        width: 35%;
         font-size: 16px;
     }
 
     .medicin-support {
-        width: 34%;
-        top: 10rem;
-        right: 0rem;
+        width: 28%;
+        top: 6rem;
+        right: -1rem;
         font-size: 16px;
     }
 
     .transp-support {
-        top: 23.5rem;
+        top: 18rem;
         left: 0;
-        width: 35%;
+        width: 40%;
         font-size: 16px;
-        border-right: 2px dashed #6C944C;
-    }
-
-    .transp-support p {
-        width: 95%;
     }
 
     .support_logo {
-        top: 10.3rem;
-        left: 4.5rem;
-        gap: 0.5rem;
+        top: 8.4rem;
+        left: 10.2rem;
+        gap: 0;
     }
 
     #lv-AM_logo {
-        width: 36%;
-        margin: 0;
+        width: 60%;
     }
 
     #ukr-vestn_logo {
-        width: 28%;
+        width: 32%;
     }
 
     .support_follow {
-        margin-top: 6.5rem;
+        margin-top: 2rem;
     }
 
     .support_follow h4 {
@@ -1421,20 +1411,21 @@ h1_p_wrapper-2 {
     }
 
     #border-dotted-human {
-        width: 7rem;
+        width: 8rem;
     }
 
     #border-dotted-medicin {
-        width: 15.5rem;
+        width: 9rem;
         top: 20rem;
     }
 
     #border-dotted-transp {
-        width: 13rem;
+        width: 14rem;
     }
 
     .wrapper_doned {
         height: 90%;
+        width: 91%;
     }
 
     .doned-info {
@@ -1596,564 +1587,548 @@ h1_p_wrapper-2 {
     }
 
     .donate-2 {
-        height: 33rem;
+        height: 32rem;
+
+        | #thMeter {
+            margin-top: 2rem;
+        }
+
+        .thMeter_raised-proj {
+            bottom: 4.5rem;
+        }
+
+        .thMeter_raised p {
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        #whyHow {
+            background-color: #f5f5f5;
+            grid-template-columns: 1fr;
+        }
+
+        .pauseButton {
+            right: 2rem;
+        }
+
+        .carousel_container {
+            height: 38rem;
+        }
+
+        .carousel_img-3,
+        .carousel_img-4 {
+            width: 82%;
+        }
+
+        .donate,
+        .donate-5 {
+            padding: 0 3rem 0 0;
+            width: 100%;
+        }
+
+        .donate-2,
+        .donate-5,
+        .donate-4 {
+            width: 100%;
+            margin: 0;
+        }
+
+        .donate-4 h1 {
+            font-size: 40px;
+            line-height: 45px;
+        }
+
+        .donate h1,
+        .donate-5 h1 {
+            padding: 2rem 0 0 1.5rem;
+            font-weight: 600;
+        }
+
+        .donate .thMeter_raised,
+        .donate-5 .thMeter_raised {
+            padding-left: 1.5rem;
+        }
+
+        .h1_p_wrapper {
+            padding: 1rem 2rem 0 2rem;
+        }
+
+        .h1_p_wrapper p {
+            margin-top: 1.5rem;
+        }
+
+        .h1_p_wrapper p {
+            margin-top: 2.5rem;
+            font-size: 16px;
+        }
+
+        .donate .h1_p_wrapper p,
+        .donate-5 .h1_p_wrapper p {
+            padding-left: 1.5rem;
+        }
+
+        .thMeter-wrapper,
+        .thMeter-wrapper-2,
+        .thMeter-wrapper-4 {
+            width: 16.75rem;
+        }
+
+        .thMeter_raised p {
+            font-size: 12px;
+            margin-top: 0.5rem;
+        }
+
+        span {
+            left: 2rem;
+        }
+
+        .donate .btn_ziedot,
+        .donate-5 .btn_ziedot {
+            padding-left: 1.5rem;
+        }
+
+        .section_why-how {
+            height: 54rem;
+        }
+
+        .why_donate {
+            text-align: left;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 3rem 2rem 0 2rem;
+        }
+
+        .why_donate-p {
+            margin-left: 2rem;
+        }
+
+        .why_donate-p p {
+            margin-block-start: 0.5rem;
+            margin-block-end: 0.5rem;
+        }
+
+        .why_donate h1 {
+            font-size: 49px;
+        }
+
+        .why_donate h2 {
+            font-size: 25px;
+            padding-top: 1rem;
+        }
+
+        .why_donate p {
+            font-size: 20px;
+        }
+
+        .container_slider {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 4rem;
+            margin: 2rem 0 4rem 0;
+        }
+
+        .section_slider h1 {
+            font-size: 49px;
+            line-height: 52px;
+        }
+
+        .slider_h1_p p {
+            margin-top: 1rem;
+            font-size: 20px;
+        }
+
+        .project-about-top {
+            height: 74%;
+        }
+
+        .project-about-bottom {
+            height: 95.5%;
+        }
+
+        #project-name_cars,
+        #project-name_xbank,
+        #project-name_support,
+        #project-name_drones,
+        #project-name_ambassadors,
+        #project-name_npa {
+            font-size: 32px;
+            line-height: 40px;
+        }
+
+        #project-name_cars {
+            padding-top: 1rem;
+        }
+
+
+        .section_support {
+            padding: 4rem 2rem 3rem 2rem;
+        }
+
+        .section_support h1 {
+            font-size: 49px;
+            line-height: 52px;
+            margin: 0;
+        }
+
+        .support_wrapper h4 {
+            width: 100%;
+            font-size: 25px;
+            line-height: 35px;
+        }
+
+        .support-what {
+            align-items: flex-start;
+        }
+
+        .support-what img {
+            width: 75%;
+            margin-top: 5rem;
+        }
+
+        .human-support {
+            top: 0rem;
+            left: 0rem;
+            width: 60%;
+            font-size: 16px;
+        }
+
+        .human-support p {
+            width: 85%;
+            margin-block-end: 0.5rem;
+        }
+
+        #border-dotted-human {
+            width: 5rem;
+        }
+
+        .medicin-support {
+            width: 35%;
+            top: 6rem;
+            right: 0rem;
+            font-size: 16px;
+        }
+
+        .transp-support {
+            top: 23rem;
+            left: 0;
+            width: 75%;
+            font-size: 16px;
+        }
+
+        .transp-support p {
+            width: 65%;
+            margin-block-start: 0.5rem;
+        }
+
+        #border-dotted-transp-top {
+            width: 6rem;
+            border-bottom: 2px dashed #6C944C;
+            display: flex;
+        }
+
+        #border-dotted-transp {
+            display: none;
+        }
+
+        .support_follow h4 {
+            padding-left: 1rem;
+        }
+
+        .support_logo {
+            top: 11.5rem;
+            left: 17px;
+            gap: 0.5rem;
+        }
+
+        #lv-AM_logo {
+            width: 46%;
+            margin-top: 0;
+        }
+
+        #ukr-vestn_logo {
+            width: 23%;
+            margin-top: 0;
+        }
+
+        .support_follow {
+            margin-top: 6rem;
+        }
+
+        .section_doned {
+            height: 40rem;
+        }
+
+        .wrapper_doned {
+            height: 85%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .doned-h {
+            width: 90%;
+        }
+
+        .section_doned h1 {
+            font-size: 38px;
+            line-height: 52px;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .doned-h h5 {
+            font-size: 55px;
+            margin: 1rem 0;
+            text-shadow: -0.2rem 0.1rem #3385D6;
+        }
+
+        .doned-h h3 {
+            font-size: 27px;
+            text-align: center;
+        }
+
+        .thMeter-doned {
+            width: 85%;
+        }
+
+        .doned-p p {
+            margin-block-start: 0;
+            margin-block-end: 0.3rem;
+        }
+
+        .section_partners h1 {
+            font-size: 49px;
+            line-height: 52px;
+        }
+
+        .partneri {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 3rem;
+            gap: 1rem;
+        }
+
+
+        #draugiem_logo {
+            width: 40%;
+        }
+
+        .fist-line_logo {
+            gap: 1rem;
+        }
+
+        .second-line_logo {
+            gap: 4.5rem;
+        }
+
+        .third-line_logo {
+            gap: 4rem;
+        }
+
+        .section_questions {
+            padding: 4rem 2rem 3rem 2rem;
+        }
+
+        .section_questions h1 {
+            font-size: 49px;
+            line-height: 52px;
+            margin: 0;
+        }
+
+        .questions-all {
+            padding-left: 1rem;
+        }
+
+
+        .fa-angle-left {
+            left: 1rem;
+        }
+
+        .fa-angle-right {
+            right: 1rem;
+        }
+
+        #wrapper_slider {
+            padding: 4rem 2rem 0 2rem;
+        }
+
+        .project {
+            width: 100%;
+        }
+
+        .project-image {
+            height: 22rem;
+        }
+
+        .project-wrapper_all {
+            width: 16rem;
+        }
+
+        .project-wrapper {
+            width: 14rem;
+        }
+
+        .project-transparent {
+            width: 16rem;
+        }
+
+        .thMeter_raised-proj {
+            width: 14rem;
+            bottom: 6rem;
+        }
+
+        .project-about {
+            width: 70%;
+            top: 6rem;
+        }
+
+        .btn_ziedot-proj {
+            width: 14rem;
+        }
+
+        footer {
+            padding: 2rem 2rem 0 2rem;
+        }
+
+        .contacts {
+            margin-top: 2rem;
+        }
+
+        .contacts p:not(:first-child) {
+            margin-top: 2rem;
+        }
+
+        #copy p {
+            font-size: 14px;
+        }
+
     }
 
-    | #thMeter {
-        margin-top: 2rem;
-    }
 
-    .thMeter_raised-proj {
-        bottom: 4.5rem;
-    }
-
-    .thMeter_raised p {
-        font-size: 14px;
-        font-weight: 600;
+    .btn_more {
         margin-top: 0.5rem;
     }
 
-    #whyHow {
-        background-color: #f5f5f5;
-        grid-template-columns: 1fr;
-    }
-
-    .pauseButton {
-        right: 2rem;
-    }
-
-    .carousel_container {
-        height: 38rem;
-    }
-
-    .carousel_img-3,
-    .carousel_img-4 {
-        width: 82%;
-    }
-
-    .donate,
-    .donate-5 {
-        padding: 0 3rem 0 0;
-        width: 100%;
-    }
-
-    .donate-2,
-    .donate-5,
-    .donate-4 {
-        width: 100%;
-        margin: 0;
-    }
-
-    .donate-4 h1 {
-        font-size: 40px;
-        line-height: 45px;
-    }
-
-    .donate h1,
-    .donate-5 h1 {
-        padding: 1rem 0 0 1.5rem;
-        font-weight: 600;
-    }
-
-    .donate-2 h1 {
-        margin-top: 2rem;
-    }
-
-    .donate .thMeter_raised,
-    .donate-5 .thMeter_raised {
-        padding-left: 1.5rem;
-    }
-
-    .h1_p_wrapper {
-        padding: 1rem 2rem 0 2rem;
-    }
-
-    .h1_p_wrapper p {
-        margin-top: 1.5rem;
-    }
-
-    .h1_p_wrapper p {
-        margin-top: 2.5rem;
-        font-size: 16px;
-    }
-
-    .donate .h1_p_wrapper p,
-    .donate-5 .h1_p_wrapper p {
-        padding-left: 1.5rem;
-    }
-
-    .thMeter-wrapper,
-    .thMeter-wrapper-2,
-    .thMeter-wrapper-4 {
-        width: 16.75rem;
-    }
-
-    .thMeter_raised p {
-        font-size: 12px;
-        margin-top: 0.5rem;
-    }
-
-    span {
-        left: 2rem;
-    }
-
-    .donate .btn_ziedot,
-    .donate-5 .btn_ziedot {
-        padding-left: 1.5rem;
-    }
-
-    .section_why-how {
-        height: 54rem;
-    }
-
-    .why_donate {
-        text-align: left;
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        padding: 3rem 2rem 0 2rem;
-    }
-
-    .why_donate-p {
-        margin-left: 2rem;
-    }
-
-    .why_donate-p p {
-        margin-block-start: 0.5rem;
-        margin-block-end: 0.5rem;
-    }
-
-    .why_donate h1 {
-        font-size: 49px;
-    }
-
-    .why_donate h2 {
-        font-size: 25px;
-        padding-top: 1rem;
-    }
-
-    .why_donate p {
+    .more {
+        background-color: transparent;
+        color: #4257A6;
+        border: #4257A6 solid 1px;
         font-size: 20px;
-    }
-
-    .container_slider {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 4rem;
-        margin: 2rem 0 4rem 0;
-    }
-
-    .section_slider h1 {
-        font-size: 49px;
-        line-height: 52px;
-    }
-
-    .slider_h1_p p {
-        margin-top: 1rem;
-        font-size: 20px;
-    }
-
-    .project-about-top {
-        height: 74%;
-    }
-
-    .project-about-bottom {
-        height: 95.5%;
-    }
-
-    #project-name_cars,
-    #project-name_xbank,
-    #project-name_support,
-    #project-name_drones,
-    #project-name_ambassadors,
-    #project-name_npa {
-        font-size: 32px;
-        line-height: 40px;
-    }
-
-    #project-name_cars {
-        padding-top: 1rem;
-    }
-
-
-    .section_support {
-        padding: 4rem 2rem 3rem 2rem;
-    }
-
-    .section_support h1 {
-        font-size: 49px;
-        line-height: 52px;
-        margin: 0;
-    }
-
-    .support_wrapper h4 {
-        width: 100%;
-        font-size: 25px;
-        line-height: 35px;
-    }
-
-    .support-what {
-        align-items: flex-start;
-    }
-
-    .support-what img:first-child {
-        width: 55%;
-        margin: 4.5rem 0 0 2rem;
-    }
-
-    .human-support {
-        top: 0rem;
-        left: 0rem;
-        width: 45%;
-        font-size: 12px;
-        line-height: 16px;
-    }
-
-    .human-support p {
-        width: 85%;
-        margin-block-end: 0.5rem;
-    }
-
-    #border-dotted-human {
-        width: 6rem;
-    }
-
-    .medicin-support {
-        width: 36%;
-        top: 5rem;
-        right: 0rem;
-        font-size: 12px;
-        line-height: 16px;
-    }
-
-    #border-dotted-medicin {
-        width: 11rem;
-        top: 14.5rem;
-    }
-
-    .transp-support {
-        top: 16.5rem;
-        left: 0;
-        width: 37%;
-        font-size: 12px;
-        line-height: 16px;
-    }
-
-    .transp-support p {
-        width: 95%;
-        margin-block-start: 0.5rem;
-    }
-
-    #border-dotted-transp {
-        width: 9rem;
-    }
-
-    .support_follow h4 {
-        padding-left: 1rem;
-    }
-
-    .support_logo {
-        top: 7.5rem;
-        left: -23px;
-        gap: 0.4rem;
-    }
-
-    #lv-AM_logo {
-        width: 17%;
-    }
-
-    #ukr-vestn_logo {
-        width: 13%;
-        margin-top: 0;
-    }
-
-    .support_follow {
-        margin-top: 6rem;
-    }
-
-    .section_doned {
-        height: 40rem;
-    }
-
-    .wrapper_doned {
-        height: 85%;
-        width: 100%;
+        text-decoration: none;
+        padding: 0.4rem 0;
+        border-radius: 10px;
         display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
+        cursor: pointer;
     }
 
-    .doned-h {
-        width: 90%;
+    .slider_btn {
+        display: none;
     }
 
-    .section_doned h1 {
-        font-size: 42px;
-        line-height: 48px;
+    .projects {
+        position: relative;
         text-align: center;
+        color: white;
+        font-size: 30px;
     }
 
-    .doned-h h5 {
-        font-size: 45px;
-        margin: 1.5rem 0;
-        text-shadow: -0.15rem 0.1rem #3385D6;
+    .text-centered {
+        position: absolute;
+        top: -250%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
-    .doned-h h3 {
-        font-size: 22px;
-        text-align: center;
-    }
-
-    .thMeter-doned {
-        width: 85%;
-        bottom: 9rem;
-    }
-
-    .doned-p {
-        font-size: 18px;
-        gap: 0.3rem;
-    }
-
-    .doned-p p {
+    .projects p {
+        font-size: 40px;
         margin-block-start: 0;
-        margin-block-end: 0.3rem;
+        margin-block-end: 0;
+        display: none;
     }
 
-    .section_partners h1 {
-        font-size: 49px;
-        line-height: 52px;
+    .slider button {
+        position: absolute;
+        display: none;
     }
 
-    .partneri {
+    .slider.dragging {
+        cursor: grab;
+        scroll-behavior: auto;
+    }
+
+    .slider.dragging img {
+        pointer-events: none;
+    }
+
+    .slider div:first-child {
+        margin-left: 0;
+    }
+
+
+    #Container {
+        align-items: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        background-color: #ffffff;
+    }
+
+
+    .social {
+        width: 8rem;
+        display: flex;
         justify-content: space-between;
-        margin-top: 3rem;
-        gap: 1rem;
-    }
-
-
-    #draugiem_logo {
-        width: 40%;
-    }
-
-    .fist-line_logo {
-        gap: 0.5rem;
-    }
-
-    .second-line_logo {
-        gap: 3.5rem;
-    }
-
-    .third-line_logo {
-        gap: 4rem;
-    }
-
-    .section_questions {
-        padding: 4rem 2rem 3rem 2rem;
-    }
-
-    .section_questions h1 {
-        font-size: 49px;
-        line-height: 52px;
-        margin: 0;
-    }
-
-    .questions-all {
-        padding-left: 0;
-    }
-
-    .questions-all div {
-        font-size: 22px;
-        padding: 0.1rem 0 0.1rem 1rem;
-    }
-
-    .fa-angle-left {
-        left: 1rem;
-    }
-
-    .fa-angle-right {
-        right: 1rem;
-    }
-
-    #wrapper_slider {
-        padding: 4rem 2rem 0 2rem;
-    }
-
-    .project {
-        width: 100%;
-    }
-
-    .project-image {
-        height: 22rem;
-    }
-
-    .project-wrapper_all {
-        width: 16rem;
-    }
-
-    .project-wrapper {
-        width: 14rem;
-    }
-
-    .project-transparent {
-        width: 16rem;
-    }
-
-    .thMeter_raised-proj {
-        width: 14rem;
-        bottom: 6rem;
-    }
-
-    .project-about {
-        width: 70%;
-        top: 6rem;
-    }
-
-    .btn_ziedot-proj {
-        width: 14rem;
     }
 
     footer {
-        padding: 2rem 2rem 0 2rem;
+        background-color: #4257A6;
+        font-family: 'Roboto';
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about img {
+        width: 6.25rem;
+    }
+
+    .social {
+        margin-top: 2rem;
     }
 
     .contacts {
-        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
     }
 
-    .contacts p:not(:first-child) {
-        margin-top: 2rem;
+    .contacts p:first-child {
+        font-size: 18px;
     }
 
-    #copy p {
+    .copy {
+        text-align: center;
         font-size: 14px;
+        color: #fff
     }
 
-}
+    hr {
+        border-color: #f4f4f4;
+    }
 
 
-.btn_more {
-    margin-top: 0.5rem;
-}
-
-.more {
-    background-color: transparent;
-    color: #4257A6;
-    border: #4257A6 solid 1px;
-    font-size: 20px;
-    text-decoration: none;
-    padding: 0.4rem 0;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.slider_btn {
-    display: none;
-}
-
-.projects {
-    position: relative;
-    text-align: center;
-    color: white;
-    font-size: 30px;
-}
-
-.text-centered {
-    position: absolute;
-    top: -250%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.projects p {
-    font-size: 40px;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    display: none;
-}
-
-.slider button {
-    position: absolute;
-    display: none;
-}
-
-.slider.dragging {
-    cursor: grab;
-    scroll-behavior: auto;
-}
-
-.slider.dragging img {
-    pointer-events: none;
-}
-
-.slider div:first-child {
-    margin-left: 0;
-}
-
-
-#Container {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-}
-
-
-.social {
-    width: 8rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-footer {
-    background-color: #4257A6;
-    font-family: 'Roboto';
-}
-
-.about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.about img {
-    width: 6.25rem;
-}
-
-.social {
-    margin-top: 2rem;
-}
-
-.contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-size: 16px;
-    color: #fff;
-}
-
-.contacts p:first-child {
-    font-size: 18px;
-}
-
-.copy {
-    text-align: center;
-    font-size: 14px;
-    color: #fff
-}
-
-hr {
-    border-color: #f4f4f4;
-}
-
-
-/*:root {
+    /*:root {
 
     --primary-color:
 
