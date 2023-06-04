@@ -90,5 +90,7 @@ launchSlideshow();
 
 const pauseButton = document.querySelector(".pauseButton");
 
+
+// https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event
 // pauseButton.onClick(clearInterval(interval));
 // playButton.onClick(launchSlideshow())
