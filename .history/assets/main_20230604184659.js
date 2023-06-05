@@ -73,25 +73,24 @@ dotsNav.addEventListener('click', e => {
 
 const showSlides = () => {
 
-    //console.log("current", currentDisplayIndex);
-    //console.log("next", nextDisplayIndex);
     moveToSlide(track, slides[currentDisplayIndex], slides[nextDisplayIndex]);
     updateDots(dots[currentDisplayIndex], dots[nextDisplayIndex]);
 
     currentDisplayIndex++;
     nextDisplayIndex++;
+
     checkIndexesAreNotOutOfBounds();
 };
 
-//setInterval(() => showSlides(), 5000)
+setInterval(() => showSlides(), 5000)
 
-let interval;
+
 const launchSlideshow = () => {
     let interval = setInterval(() => showSlides(), 5000);
 }
 launchSlideshow();
+
 const pauseButton = document.querySelector(".pauseButton");
 
-// https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event
-// pauseButton.onClick(clearInterval(interval));
-// playButton.onClick(launchSlideshow())
+pauseButton.onClick(clearInterval(interval));
+playButton.onClick(launchSlideshow())

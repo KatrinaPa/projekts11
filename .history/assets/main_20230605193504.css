@@ -2031,7 +2031,7 @@ section {
 
     .thMeter-doned {
         width: 85%;
-        bottom: 10rem;
+        bottom: 9rem;
     }
 
     .doned-p {
@@ -2044,10 +2044,6 @@ section {
         margin-block-end: 0.3rem;
     }
 
-    .section_partners {
-        padding: 4rem 2rem 3rem 2rem;
-    }
-
     .section_partners h1 {
         font-size: 49px;
         line-height: 52px;
@@ -2058,17 +2054,13 @@ section {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        margin-top: 2rem;
-        gap: 2rem;
+        margin-top: 3rem;
+        gap: 1rem;
     }
+
 
     #draugiem_logo {
         width: 40%;
-    }
-
-    #madara_logo,
-    #lokalise_logo {
-        width: 27%;
     }
 
     .fist-line_logo {

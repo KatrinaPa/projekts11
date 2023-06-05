@@ -58,10 +58,19 @@ body {
 .header {
     font-family: 'Roboto';
     background-color: #ffffff;
+    z-index: 3;
+    top: -5rem;
+    height: 8rem;
+}
+
+.navbar {
+    padding: 2rem 5.75rem 1rem 5.75rem;
 }
 
 .navigation {
     display: none;
+    /*display: grid;
+    grid-template-columns: 1fr 3fr 1fr;*/
 }
 
 .nav-menu {
@@ -162,7 +171,7 @@ h1 {
 .carousel_img-3,
 .carousel_img-4 {
     right: 0;
-    width: 65%;
+    width: 75%;
     height: 100%;
     object-fit: cover;
     position: absolute;
@@ -295,7 +304,7 @@ h1_p_wrapper-2 {
 
 .thMeter-wrapper {
     background-color: white;
-    width: 23rem;
+    width: 90%;
     height: 2.2rem;
 }
 
@@ -495,13 +504,7 @@ section {
     margin: 0;
 }
 
-.header-content {
-    max-width: 1280px;
-}
-
-.section-content,
-.section-content-why,
-.section-content-doned {
+.section-content {
     display: flex;
     max-width: 1280px;
     flex-direction: column;
@@ -538,14 +541,14 @@ section {
     font-size: 16px;
     position: absolute;
     z-index: 1;
-    top: 6rem;
+    top: 6.5rem;
 }
 
 
 .project-transparent {
     background: #ffffff;
     opacity: 70%;
-    width: 16rem;
+    width: 18rem;
     height: 100%;
     top: 0;
     position: absolute;
@@ -620,7 +623,7 @@ section {
     flex-direction: column;
     position: absolute;
     width: 14rem;
-    bottom: 6rem;
+    bottom: 6.5rem;
     z-index: 1;
 }
 
@@ -721,7 +724,7 @@ section {
 }
 
 .support-what img {
-    width: 40rem;
+    width: 65%;
 }
 
 .human-support,
@@ -741,7 +744,7 @@ section {
 }
 
 .human-support p {
-    width: 80%;
+    width: 70%;
 }
 
 #border-dotted-human {
@@ -750,8 +753,8 @@ section {
 }
 
 .medicin-support {
-    width: 18%;
-    top: 12rem;
+    width: 15%;
+    top: 11rem;
     right: 0rem;
 }
 
@@ -764,7 +767,7 @@ section {
 }
 
 .transp-support {
-    top: 28rem;
+    top: 36rem;
     left: 0;
 }
 
@@ -930,15 +933,15 @@ section {
 }
 
 .fist-line_logo {
-    gap: 3rem;
+    gap: 5rem;
 }
 
 .second-line_logo {
-    gap: 15rem;
+    gap: 18rem;
 }
 
 .third-line_logo {
-    gap: 14rem;
+    gap: 18rem;
 }
 
 #madara_logo,
@@ -982,146 +985,23 @@ section {
     background-color: #ffcc00;
 }
 
-@media (min-width: 1360px) {
+@media (min-width: 1390px) {
 
-    .donate-4,
-    .donate,
-    .donate-2,
-    .donate-5 {
-        margin-left: 4rem;
+    .donate-4 {
+        margin-left: 5rem;
     }
 
-    .support-span,
-    .drones-span {
-        left: 6rem;
-    }
-
-    .nmp-span,
-    .cars-span {
-        left: 9rem;
-    }
-}
-
-@media (min-width: 1560px) {
-
-    .donate-4,
-    .donate,
-    .donate-2,
-    .donate-5 {
-        margin-left: 8rem;
-    }
-
-    .support-span,
-    .drones-span {
-        left: 11rem;
-    }
-
-    .nmp-span,
-    .cars-span {
-        left: 13rem;
-    }
-}
-
-@media (min-width: 1660px) {
-
-    .donate-4,
-    .donate,
-    .donate-2,
-    .donate-5 {
-        margin-left: 11rem;
-    }
-
-    .support-span,
-    .drones-span {
-        left: 14rem;
-    }
-
-    .nmp-span,
-    .cars-span {
-        left: 16rem;
-    }
-}
-
-@media (min-width: 1760px) {
-
-    .donate-4,
-    .donate,
-    .donate-2,
-    .donate-5 {
-        margin-left: 14rem;
-    }
-
-    .support-span,
-    .drones-span {
-        left: 17rem;
-    }
-
-    .nmp-span,
-    .cars-span {
-        left: 19rem;
-    }
-}
-
-@media (min-width: 1860px) {
-
-    .donate-4,
-    .donate,
-    .donate-2,
-    .donate-5 {
-        margin-left: 17rem;
-    }
-
-    .support-span,
-    .drones-span {
-        left: 20rem;
-    }
-
-    .nmp-span,
-    .cars-span {
-        left: 22rem;
-    }
-}
-
-@media (min-width: 1960px) {
-
-    .donate-4,
-    .donate,
-    .donate-2,
-    .donate-5 {
-        margin-left: 20rem;
-    }
-
-    .support-span,
-    .drones-span {
-        left: 23rem;
-    }
-
-    .nmp-span,
-    .cars-span {
-        left: 25rem;
+    .carousel_img-3,
+    .carousel_img-4 {
+        width: 85%;
     }
 }
 
 @media (min-width: 1280px) {
 
-    .header-content {
-        margin: 2rem auto;
-        padding: 0 5.75rem;
-    }
-
     .section-content {
         margin: 4rem auto;
-        padding: 0 5.75rem;
-    }
-
-    .section-content-why {
-        margin: 0 auto;
-        padding: 0 5.75rem;
-    }
-
-    .section-content-doned {
-        margin: 4rem auto;
-        padding: 0 2.5rem;
+        padding: 0 1.5rem;
     }
 
     section .project {
@@ -1138,11 +1018,13 @@ section {
     }
 
     .donate-2 {
+        margin-left: 2.5rem;
         margin-bottom: 2rem;
     }
 
     .h1_p_wrapper {
         padding: 4rem 0 1rem 5.75rem;
+        width: 50%;
         font-size: 20px;
     }
 
@@ -1164,7 +1046,6 @@ section {
     .h1_p_wrapper p {
         margin: 1.5rem 0 0 0;
         color: #1E1F24;
-        width: 24rem;
     }
 
     .donate-5 .h1_p_wrapper p {
@@ -1186,12 +1067,12 @@ section {
     }
 
     .project-image {
-        height: 23rem;
+        height: 26rem;
     }
 
     .container_slider {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 5rem;
+        grid-gap: 6rem;
     }
 
     .slider_h1_p {
@@ -1568,12 +1449,8 @@ section {
         width: 13rem;
     }
 
-    .section-content-doned {
-        padding: 1rem 3rem;
-    }
-
     .wrapper_doned {
-        height: 30rem;
+        height: 90%;
     }
 
     .doned-info {
@@ -1605,10 +1482,6 @@ section {
     .doned-p p {
         margin-block-start: 0;
         margin-block-end: 0.4rem;
-    }
-
-    .questions-all div {
-        padding: 0 2rem 0.01rem 2rem;
     }
 
     .fa-angle-left {
@@ -1664,11 +1537,11 @@ section {
     }
 
     .second-line_logo {
-        gap: 5.5rem;
+        gap: 7.5rem;
     }
 
     .third-line_logo {
-        gap: 6rem;
+        gap: 7rem;
     }
 
     #madara_logo,
@@ -1995,17 +1868,17 @@ section {
         margin-top: 6rem;
     }
 
+    .section_doned {
+        height: 40rem;
+    }
+
     .wrapper_doned {
-        height: 36rem;
+        height: 85%;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-
-    .section-content-doned {
-        padding: 1rem 2rem;
     }
 
     .doned-h {
@@ -2031,7 +1904,7 @@ section {
 
     .thMeter-doned {
         width: 85%;
-        bottom: 10rem;
+        bottom: 9rem;
     }
 
     .doned-p {
@@ -2044,10 +1917,6 @@ section {
         margin-block-end: 0.3rem;
     }
 
-    .section_partners {
-        padding: 4rem 2rem 3rem 2rem;
-    }
-
     .section_partners h1 {
         font-size: 49px;
         line-height: 52px;
@@ -2058,17 +1927,13 @@ section {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        margin-top: 2rem;
-        gap: 2rem;
+        margin-top: 3rem;
+        gap: 1rem;
     }
+
 
     #draugiem_logo {
         width: 40%;
-    }
-
-    #madara_logo,
-    #lokalise_logo {
-        width: 27%;
     }
 
     .fist-line_logo {

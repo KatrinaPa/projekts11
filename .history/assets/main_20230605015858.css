@@ -58,10 +58,19 @@ body {
 .header {
     font-family: 'Roboto';
     background-color: #ffffff;
+    z-index: 3;
+    top: -5rem;
+    height: 8rem;
+}
+
+.navbar {
+    padding: 2rem 5.75rem 1rem 5.75rem;
 }
 
 .navigation {
     display: none;
+    /*display: grid;
+    grid-template-columns: 1fr 3fr 1fr;*/
 }
 
 .nav-menu {
@@ -128,6 +137,7 @@ h1 {
 }
 
 .section_why-how {
+    padding: 0;
     font-family: 'Roboto';
     background-color: #ffffff;
     height: 30.4rem;
@@ -162,7 +172,7 @@ h1 {
 .carousel_img-3,
 .carousel_img-4 {
     right: 0;
-    width: 65%;
+    width: 75%;
     height: 100%;
     object-fit: cover;
     position: absolute;
@@ -295,7 +305,7 @@ h1_p_wrapper-2 {
 
 .thMeter-wrapper {
     background-color: white;
-    width: 23rem;
+    width: 90%;
     height: 2.2rem;
 }
 
@@ -416,11 +426,6 @@ h1_p_wrapper-2 {
     flex-direction: column;
 }
 
-.why_donate {
-    margin-top: 4.5rem;
-    width: 70%;
-}
-
 .why_donate h2 {
     font-weight: 300;
     margin: 0;
@@ -431,6 +436,9 @@ h1_p_wrapper-2 {
     font-weight: 300;
     line-height: 40px;
     color: #404040;
+    margin-left: 5.75rem;
+    /*border: 1px solid #FFCC00;
+    border-width: 1px 0 1px 1px;*/
     width: 80%;
     border-left: 2px solid #FFCC00;
 }
@@ -438,12 +446,12 @@ h1_p_wrapper-2 {
 .why_donate h4 {
     font-size: 32px;
     font-weight: 300;
-    margin: 2rem 0 2rem 0;
+    margin: 1rem 0 2rem 0;
 }
 
 #border-solid_top {
     border-top: 2px solid #FFCC00;
-    width: 60%;
+    width: 50%;
 }
 
 #border-solid_bottom {
@@ -478,6 +486,7 @@ h1_p_wrapper-2 {
 }
 
 #wrapper_slider {
+    position: relative;
     overflow: hidden;
 }
 
@@ -495,16 +504,17 @@ section {
     margin: 0;
 }
 
-.header-content {
-    max-width: 1280px;
-}
-
-.section-content,
-.section-content-why,
-.section-content-doned {
+.section-content {
     display: flex;
     max-width: 1280px;
     flex-direction: column;
+    margin: 6rem auto;
+}
+
+@media (min-width: 1280px) {
+    section .project {
+        width: unset;
+    }
 }
 
 .slider_h1_p {
@@ -527,6 +537,11 @@ section {
     position: relative;
 }
 
+.project-wrapper_all {
+    display: flex;
+    flex-direction: column;
+}
+
 .project-wrapper {
     display: flex;
     flex-direction: column;
@@ -534,18 +549,18 @@ section {
 }
 
 .project-about {
-    width: 60%;
+    width: 70%;
     font-size: 16px;
     position: absolute;
     z-index: 1;
-    top: 6rem;
+    top: 6.5rem;
 }
 
 
 .project-transparent {
     background: #ffffff;
     opacity: 70%;
-    width: 16rem;
+    width: 16.15rem;
     height: 100%;
     top: 0;
     position: absolute;
@@ -620,7 +635,7 @@ section {
     flex-direction: column;
     position: absolute;
     width: 14rem;
-    bottom: 6rem;
+    bottom: 6.5rem;
     z-index: 1;
 }
 
@@ -701,7 +716,7 @@ section {
 .section_support {
     background-color: #ffffff;
     font-family: 'Roboto';
-    padding: 0.5rem 0;
+    padding: 4rem 5.75rem 5rem 5.75rem;
     color: #2D2C2C;
 }
 
@@ -721,7 +736,7 @@ section {
 }
 
 .support-what img {
-    width: 40rem;
+    width: 60%;
 }
 
 .human-support,
@@ -736,7 +751,7 @@ section {
 }
 
 .human-support {
-    top: 6rem;
+    top: 4rem;
     left: 0rem;
 }
 
@@ -745,27 +760,27 @@ section {
 }
 
 #border-dotted-human {
-    width: 22rem;
+    width: 19rem;
     border-bottom: 2px dashed #5C9DDE;
 }
 
 .medicin-support {
     width: 18%;
-    top: 12rem;
+    top: 11rem;
     right: 0rem;
 }
 
 #border-dotted-medicin {
-    width: 18rem;
+    width: 16rem;
     border-bottom: 2px dashed #FFDB4D;
     position: absolute;
-    top: 23.5rem;
+    top: 22.5rem;
     right: 0rem;
 }
 
 .transp-support {
-    top: 28rem;
-    left: 0;
+    top: 30rem;
+    left: 1rem;
 }
 
 .transp-support p {
@@ -783,26 +798,13 @@ section {
 
 .support_logo {
     position: absolute;
-    top: 14rem;
-    left: 33rem;
+    top: 11.4rem;
+    left: 25.4rem;
+    gap: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
 }
-
-.support_logo div:first-child {
-    width: 14rem;
-    height: 9rem;
-    cursor: pointer;
-}
-
-.support_logo div:last-child {
-    width: 8rem;
-    height: 9rem;
-    cursor: pointer;
-}
-
 
 .support_follow {
     margin: 4rem 0 1rem 0;
@@ -822,17 +824,29 @@ section {
     width: 90%;
 }
 
+#lv-AM_logo {
+    width: 62%;
+    cursor: pointer;
+}
+
+#ukr-vestn_logo {
+    width: 48%;
+    cursor: pointer;
+}
+
 .support_follow #border-solid_top {
-    width: 82%;
+    width: 83%;
 }
 
 .section_doned {
     background-color: #f4f4f4;
-    padding: 0.1rem 0;
+    height: 35.25rem;
+    padding: 4.25rem 2.5rem 4.25rem 2.5rem;
 }
 
 .wrapper_doned {
-    height: 35.25rem;
+    width: 100%;
+    height: 100%;
     position: relative;
     font-family: 'Roboto';
     color: #2D2C2C;
@@ -911,7 +925,7 @@ section {
 
 .section_partners {
     background-color: #ffffff;
-    padding: 0.1rem 0;
+    padding: 4rem 5.75rem 6rem 5.75rem;
 }
 
 .partneri {
@@ -919,7 +933,6 @@ section {
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
-    background-color: #f4f4f4;
 }
 
 .partneri div {
@@ -930,15 +943,15 @@ section {
 }
 
 .fist-line_logo {
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .second-line_logo {
-    gap: 15rem;
+    gap: 14rem;
 }
 
 .third-line_logo {
-    gap: 14rem;
+    gap: 10rem;
 }
 
 #madara_logo,
@@ -952,9 +965,10 @@ section {
     cursor: pointer;
 }
 
+
 .section_questions {
     background-color: #f4f4f4;
-    padding: 0.1rem 0;
+    padding: 4rem 5.75rem 5rem 5.75rem;
 }
 
 .questions-all {
@@ -964,12 +978,7 @@ section {
 .questions-all div {
     font-family: Roboto;
     font-size: 25px;
-    padding: 0.1rem 2rem 0.1rem 2rem;
-}
-
-.questions-all div p {
-    margin-block-start: 1rem;
-    margin-block-end: 1rem;
+    padding: 0.3rem 2rem 0.3rem 2rem;
 }
 
 .questions-all div:hover {
@@ -982,152 +991,7 @@ section {
     background-color: #ffcc00;
 }
 
-@media (min-width: 1360px) {
-
-    .donate-4,
-    .donate,
-    .donate-2,
-    .donate-5 {
-        margin-left: 4rem;
-    }
-
-    .support-span,
-    .drones-span {
-        left: 6rem;
-    }
-
-    .nmp-span,
-    .cars-span {
-        left: 9rem;
-    }
-}
-
-@media (min-width: 1560px) {
-
-    .donate-4,
-    .donate,
-    .donate-2,
-    .donate-5 {
-        margin-left: 8rem;
-    }
-
-    .support-span,
-    .drones-span {
-        left: 11rem;
-    }
-
-    .nmp-span,
-    .cars-span {
-        left: 13rem;
-    }
-}
-
-@media (min-width: 1660px) {
-
-    .donate-4,
-    .donate,
-    .donate-2,
-    .donate-5 {
-        margin-left: 11rem;
-    }
-
-    .support-span,
-    .drones-span {
-        left: 14rem;
-    }
-
-    .nmp-span,
-    .cars-span {
-        left: 16rem;
-    }
-}
-
-@media (min-width: 1760px) {
-
-    .donate-4,
-    .donate,
-    .donate-2,
-    .donate-5 {
-        margin-left: 14rem;
-    }
-
-    .support-span,
-    .drones-span {
-        left: 17rem;
-    }
-
-    .nmp-span,
-    .cars-span {
-        left: 19rem;
-    }
-}
-
-@media (min-width: 1860px) {
-
-    .donate-4,
-    .donate,
-    .donate-2,
-    .donate-5 {
-        margin-left: 17rem;
-    }
-
-    .support-span,
-    .drones-span {
-        left: 20rem;
-    }
-
-    .nmp-span,
-    .cars-span {
-        left: 22rem;
-    }
-}
-
-@media (min-width: 1960px) {
-
-    .donate-4,
-    .donate,
-    .donate-2,
-    .donate-5 {
-        margin-left: 20rem;
-    }
-
-    .support-span,
-    .drones-span {
-        left: 23rem;
-    }
-
-    .nmp-span,
-    .cars-span {
-        left: 25rem;
-    }
-}
-
 @media (min-width: 1280px) {
-
-    .header-content {
-        margin: 2rem auto;
-        padding: 0 5.75rem;
-    }
-
-    .section-content {
-        margin: 4rem auto;
-        padding: 0 5.75rem;
-    }
-
-    .section-content-why {
-        margin: 0 auto;
-        padding: 0 5.75rem;
-    }
-
-    .section-content-doned {
-        margin: 4rem auto;
-        padding: 0 2.5rem;
-    }
-
-    section .project {
-        width: unset;
-    }
-
     .section_carousel {
         height: 30rem;
     }
@@ -1138,11 +1002,13 @@ section {
     }
 
     .donate-2 {
+        margin-left: 2.5rem;
         margin-bottom: 2rem;
     }
 
     .h1_p_wrapper {
         padding: 4rem 0 1rem 5.75rem;
+        width: 50%;
         font-size: 20px;
     }
 
@@ -1164,7 +1030,6 @@ section {
     .h1_p_wrapper p {
         margin: 1.5rem 0 0 0;
         color: #1E1F24;
-        width: 24rem;
     }
 
     .donate-5 .h1_p_wrapper p {
@@ -1186,7 +1051,7 @@ section {
     }
 
     .project-image {
-        height: 23rem;
+        height: 24rem;
     }
 
     .container_slider {
@@ -1220,8 +1085,15 @@ section {
         margin-left: 0;
     }
 
-    .partneri div {
-        height: 11rem;
+    .partner {
+        gap: 5rem;
+        height: 15rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .why_donate {
+        padding: 4.5rem 21rem 0 5.75rem;
     }
 
     .why_donate-p p {
@@ -1250,6 +1122,11 @@ section {
 
     .navigation {
         display: none;
+        /*display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 7rem;
+        /*is it really?*/
     }
 
     .navbar {
@@ -1546,6 +1423,15 @@ section {
         gap: 0.5rem;
     }
 
+    #lv-AM_logo {
+        width: 36%;
+        margin: 0;
+    }
+
+    #ukr-vestn_logo {
+        width: 28%;
+    }
+
     .support_follow {
         margin-top: 6.5rem;
     }
@@ -1568,12 +1454,8 @@ section {
         width: 13rem;
     }
 
-    .section-content-doned {
-        padding: 1rem 3rem;
-    }
-
     .wrapper_doned {
-        height: 30rem;
+        height: 90%;
     }
 
     .doned-info {
@@ -1607,10 +1489,6 @@ section {
         margin-block-end: 0.4rem;
     }
 
-    .questions-all div {
-        padding: 0 2rem 0.01rem 2rem;
-    }
-
     .fa-angle-left {
         left: 2rem;
     }
@@ -1619,14 +1497,24 @@ section {
         right: 2rem;
     }
 
+    .partner div {
+        height: 15rem;
+        width: 23rem;
+    }
+
+    .partner {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
     .section_why-how {
-        height: 35rem;
+        height: 34rem;
     }
 
     .why_donate {
         padding: 3rem 3rem 0 3rem;
-        margin: 0;
-        width: 80%;
     }
 
     .why_donate h2 {
@@ -1664,11 +1552,11 @@ section {
     }
 
     .second-line_logo {
-        gap: 5.5rem;
+        gap: 7.5rem;
     }
 
     .third-line_logo {
-        gap: 6rem;
+        gap: 7rem;
     }
 
     #madara_logo,
@@ -1836,7 +1724,7 @@ section {
     }
 
     .section_why-how {
-        height: 43rem;
+        height: 54rem;
     }
 
     .why_donate {
@@ -1991,21 +1879,30 @@ section {
         gap: 0.4rem;
     }
 
+    #lv-AM_logo {
+        width: 17%;
+    }
+
+    #ukr-vestn_logo {
+        width: 13%;
+        margin-top: 0;
+    }
+
     .support_follow {
         margin-top: 6rem;
     }
 
+    .section_doned {
+        height: 40rem;
+    }
+
     .wrapper_doned {
-        height: 36rem;
+        height: 85%;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-
-    .section-content-doned {
-        padding: 1rem 2rem;
     }
 
     .doned-h {
@@ -2031,7 +1928,7 @@ section {
 
     .thMeter-doned {
         width: 85%;
-        bottom: 10rem;
+        bottom: 9rem;
     }
 
     .doned-p {
@@ -2044,10 +1941,6 @@ section {
         margin-block-end: 0.3rem;
     }
 
-    .section_partners {
-        padding: 4rem 2rem 3rem 2rem;
-    }
-
     .section_partners h1 {
         font-size: 49px;
         line-height: 52px;
@@ -2058,17 +1951,13 @@ section {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        margin-top: 2rem;
-        gap: 2rem;
+        margin-top: 3rem;
+        gap: 1rem;
     }
+
 
     #draugiem_logo {
         width: 40%;
-    }
-
-    #madara_logo,
-    #lokalise_logo {
-        width: 27%;
     }
 
     .fist-line_logo {
@@ -2282,7 +2171,6 @@ footer {
 
 hr {
     border-color: #f4f4f4;
-    max-width: 1280px;
 }
 
 

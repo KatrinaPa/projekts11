@@ -2062,13 +2062,9 @@ section {
         gap: 2rem;
     }
 
+
     #draugiem_logo {
         width: 40%;
-    }
-
-    #madara_logo,
-    #lokalise_logo {
-        width: 27%;
     }
 
     .fist-line_logo {

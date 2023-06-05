@@ -89,7 +89,7 @@ let interval;
 const launchSlideshow = () => {
     let interval = setInterval(() => showSlides(), 5000);
 }
-launchSlideshow();
+//launchSlideshow();
 const pauseButton = document.querySelector(".pauseButton");
 
 // https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event
