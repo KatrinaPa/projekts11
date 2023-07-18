@@ -87,7 +87,7 @@ const showSlides = () => {
 
 let interval;
 const launchSlideshow = () => {
-    let interval = setInterval(() => showSlides(), 5000);
+    //let interval = setInterval(() => showSlides(), 5000);
 }
 launchSlideshow();
 const pauseButton = document.querySelector(".pauseButton");

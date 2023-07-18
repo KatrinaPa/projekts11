@@ -1,0 +1,1393 @@
+@font-face {
+    font-family: Roboto;
+    src: url(font/Roboto-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(font/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(font/Roboto-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(font/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(font/Poppins-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(font/Poppins-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(font/Poppins-SemiBold.ttf);
+    font-weight: 600;
+}
+
+
+body {
+    background-color: #1e1e1e;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.panel {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    font-family: 'Roboto';
+    background-color: #ffffff;
+}
+
+#logo {
+    width: 212px;
+    height: 63px;
+}
+
+h1 {
+    font-family: Poppins;
+}
+
+#wrapper {
+    background-color: #1E1F24;
+}
+
+section {
+    padding: 0;
+    margin: 0;
+}
+
+.section-content,
+.section-content-why,
+.section-content-doned,
+.section-content-partners,
+.header-content {
+    display: flex;
+    max-width: 1280px;
+    flex-direction: column;
+}
+
+.section_carousel {
+    font-family: 'Roboto';
+    color: #1E1F24;
+}
+
+.section_why-how {
+    font-family: 'Roboto';
+    background-color: #ffffff;
+    height: 30.4rem;
+}
+
+h1 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 49px;
+    line-height: 54px;
+    color: #1E1F24;
+    text-align: left;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.carousel {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel_img-support {
+    right: 0;
+    width: 65%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 0;
+}
+
+.carousel_track {
+    padding: 0;
+    margin: 0;
+}
+
+.carousel_slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.donate {
+    width: 30rem;
+    height: 26rem;
+    margin-left: 3.375rem;
+    background: linear-gradient(123deg, #ffcc00 67%, transparent 112%);
+    position: absolute;
+    z-index: 1;
+}
+
+.donate h1 {
+    font-family: Poppins;
+    text-align: left;
+    font-weight: 600;
+    font-size: 49px;
+    line-height: 54px;
+    color: #1E1F24;
+}
+
+.thMeter_raised {
+    margin-top: 1.5rem;
+    width: 23rem;
+}
+
+.thMeter-wrapper {
+    background-color: white;
+    height: 2rem;
+}
+
+.thMeter_raised p:not(:first-child) {
+    text-align: right;
+}
+
+#thMeter-support {
+    background-color: #1E1F24;
+    width: 68%;
+    height: 100%;
+    border: none;
+    padding: 0;
+}
+
+.support-span {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    left: 9rem;
+    padding-top: 0.35rem;
+    position: absolute;
+}
+
+.btn_ziedot {
+    margin-top: 1.2rem;
+}
+
+#ziedot {
+    background-color: #4257A6;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 16.75rem;
+    height: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.why_donate,
+.why_donate-p {
+    color: #1E1F24;
+}
+
+.why_donate {
+    margin-top: 4.5rem;
+    width: 80%;
+}
+
+.why_donate h2 {
+    font-weight: 300;
+    margin: 0;
+}
+
+.why_donate-p {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #1E1F24;
+    width: 95%;
+    border-left: 2px solid #FFCC00;
+}
+
+.why_donate h4 {
+    font-size: 32px;
+    font-weight: 400;
+    margin: 2.5rem 0 2rem 0;
+}
+
+#border-solid_top {
+    border-top: 2px solid #FFCC00;
+    width: 78%;
+}
+
+#border-solid_bottom {
+    border-bottom: 2px solid #FFCC00;
+    width: 38%;
+}
+
+
+
+.section_doned {
+    background-color: #f4f4f4;
+    padding: 0.01rem 0;
+}
+
+.wrapper_doned {
+    height: 40.25rem;
+    position: relative;
+    font-family: 'Roboto';
+    color: #1E1F24;
+}
+
+.wrapper_doned img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.doned-info {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(55deg, #FFDB4D 60%, transparent 90%);
+}
+
+.doned-h {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5rem 0 0 3.25rem;
+    gap: 1.5rem;
+}
+
+.doned-h h5 {
+    font-family: Poppins;
+    font-size: 120px;
+    font-weight: 600;
+    margin: 0;
+    text-shadow: -0.3rem 0.1rem #4257A6;
+}
+
+.doned-h h3 {
+    font-family: Poppins;
+    font-size: 37px;
+    font-weight: 600;
+    line-height: 45px;
+    margin: 0;
+}
+
+.thMeter-doned {
+    background-color: #ffffff;
+    width: 70%;
+    height: 1.625rem;
+    margin: 1rem 0 0 3.25rem;
+}
+
+#till-win {
+    background-color: #3EA842;
+    font-size: 14px;
+    color: #ffffff;
+    height: 100%;
+    border: none;
+    font-weight: 400;
+    text-align: right;
+    width: 90%;
+}
+
+.btn_ziedot-doned {
+    margin: 3rem 0 0 3.25rem;
+}
+
+#ziedot-doned {
+    background-color: #4257A6;
+    color: white;
+    font-size: 42px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 32.3rem;
+    height: 3.94rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.section_support {
+    background-color: #ffffff;
+    font-family: 'Roboto';
+    padding: 0.01rem 0;
+    color: #1E1F24;
+}
+
+.support_wrapper h4 {
+    width: 80%;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 56px;
+    margin: 3rem 0 1rem 0;
+}
+
+.support-what {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.support-what img {
+    width: 40rem;
+}
+
+.human-support,
+.medicin-support,
+.transp-support {
+    position: absolute;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    width: 30%;
+    z-index: 1;
+}
+
+.human-support {
+    top: 6rem;
+    left: 0rem;
+}
+
+.human-support p {
+    width: 80%;
+}
+
+#border-dotted-human {
+    width: 24rem;
+    border-bottom: 2px dashed #5C9DDE;
+}
+
+.medicin-support {
+    width: 18%;
+    top: 12rem;
+    right: 0rem;
+}
+
+#border-dotted-medicin {
+    width: 24rem;
+    border-bottom: 2px dashed #FFDB4D;
+    position: absolute;
+    top: 23.5rem;
+    right: 0rem;
+}
+
+.transp-support {
+    top: 28rem;
+    left: 0;
+}
+
+.transp-support p {
+    width: 70%;
+}
+
+#border-dotted-transp {
+    width: 30rem;
+    border-bottom: 2px dashed #6C944C;
+}
+
+#border-dotted-transp-top {
+    display: none;
+}
+
+.support_logo {
+    position: absolute;
+    top: 14rem;
+    left: 33rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.support_logo div:first-child {
+    width: 14rem;
+    height: 9rem;
+    cursor: pointer;
+}
+
+.support_logo div:last-child {
+    width: 8rem;
+    height: 9rem;
+    cursor: pointer;
+}
+
+.support_follow {
+    margin: 4rem 0 1rem 0;
+    border-left: 2px solid #FFCC00;
+}
+
+.support_follow p {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 40px;
+    padding-left: 2rem;
+    width: 80%;
+}
+
+.support_follow h4 {
+    padding-left: 2rem;
+    width: 90%;
+}
+
+.section_partners {
+    background-color: #f4f4f4;
+    padding: 0.1rem 0;
+}
+
+.partneri {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    background-color: #ffffff;
+}
+
+.partneri div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.fist-line_logo {
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.second-line_logo {
+    gap: 14rem;
+}
+
+.third-line_logo {
+    gap: 16rem;
+}
+
+#madara_logo,
+#draugiem_logo,
+#rtg_logo,
+#gaso_logo,
+#lokalise_logo,
+#tilde_logo,
+#twino_logo,
+#dpd_logo {
+    cursor: pointer;
+}
+
+.vairak a {
+    text-decoration: none;
+    color: #4257A6;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-top: 2rem;
+    font-family: Roboto;
+    font-size: 29px;
+    font-weight: 500;
+    align-items: center;
+}
+
+.vairak_btn {
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.vairak_btn img {
+    width: 75%;
+}
+
+.section_questions {
+    background-color: #ffffff;
+    padding: 0.1rem 0;
+}
+
+.questions-all {
+    margin-top: 1rem;
+}
+
+.questions-all div {
+    font-family: Roboto;
+    font-size: 25px;
+    padding: 0.1rem 2rem 0.1rem 2rem;
+}
+
+.questions-all div p {
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+}
+
+.questions-all div:hover {
+    border: 2px dashed #FFCC00;
+    cursor: pointer;
+}
+
+.yellow-bottom {
+    height: 0.25rem;
+    background-color: #ffcc00;
+}
+
+@media (min-width: 1360px) {
+
+    .donate {
+        margin-left: 5rem;
+    }
+}
+
+@media (min-width: 1560px) {
+    .donate {
+        margin-left: 8rem;
+    }
+}
+
+@media (min-width: 1660px) {
+    .donate {
+        margin-left: 11rem;
+    }
+}
+
+@media (min-width: 1760px) {
+    .donate {
+        margin-left: 14rem;
+    }
+}
+
+@media (min-width: 1860px) {
+    .donate {
+        margin-left: 17rem;
+    }
+}
+
+@media (min-width: 1960px) {
+    .donate {
+        margin-left: 20rem;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .header-content {
+        margin: 2rem auto;
+        padding: 0 5.75rem;
+    }
+
+    .section-content {
+        margin: 4rem auto;
+        padding: 0 5.75rem;
+    }
+
+    .section_support h1 {
+        width: 80%;
+    }
+
+    .section-content-partners {
+        margin: 8rem auto;
+        padding: 0 5.75rem;
+    }
+
+    .partneri {
+        height: 35rem;
+    }
+
+    .section-content-why {
+        margin: 0 auto;
+        padding: 0 5.75rem;
+    }
+
+    .section-content-doned {
+        margin: 4.25rem auto 4.5rem auto;
+        padding: 0 2.5rem;
+    }
+
+    .section_carousel {
+        height: 30.125rem;
+    }
+
+    .carousel_slide {
+        display: flex;
+        align-items: center;
+    }
+
+    .h1_p_wrapper {
+        padding: 2rem 0 0 2.375rem;
+    }
+
+    .thMeter_raised p {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0.5rem 0;
+    }
+
+    .partneri div {
+        height: 10rem;
+    }
+
+    .why_donate-p p {
+        padding-left: 1.4rem;
+        margin: 0.9rem 0;
+    }
+
+    footer {
+        padding: 2rem 7rem 2rem 7rem;
+    }
+
+    .contacts {
+        width: 65%;
+    }
+
+}
+
+@media screen and (max-width: 1279px) {
+    .panel {
+        max-width: 700px;
+    }
+
+    .header-content {
+        margin: 2rem auto;
+        padding: 0 3rem 0 3rem;
+    }
+
+    #logo {
+        margin: 0;
+    }
+
+    #gaso_logo {
+        width: 15%;
+    }
+
+    .carousel {
+        height: 30.125rem;
+    }
+
+    .carousel_slide {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .donate {
+        margin-left: 3rem;
+        width: 70%;
+        background: linear-gradient(123deg, #ffcc00 65%, transparent 102%);
+    }
+
+    .support-span {
+        left: 7rem;
+    }
+
+    .h1_p_wrapper {
+        padding: 2rem;
+    }
+
+    .why_donate p {
+        font-size: 23px;
+    }
+
+    .why_donate h4 {
+        font-size: 30px;
+    }
+
+    .thMeter_raised p {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0.5rem 0 1rem 0;
+    }
+
+    .btn_ziedot {
+        margin-top: 0.5rem;
+    }
+
+    .btn_ziedot-proj {
+        width: 12rem;
+    }
+
+    .section_support {
+        padding: 3rem 3rem 3rem 3rem;
+    }
+
+    .support_wrapper h4 {
+        width: 95%;
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .support-what {
+        align-items: flex-start;
+    }
+
+    .support-what img:first-child {
+        width: 60%;
+        margin: 5rem 0 0 2rem;
+    }
+
+    .human-support {
+        top: 1rem;
+        width: 45%;
+        font-size: 16px;
+    }
+
+    .medicin-support {
+        width: 34%;
+        top: 10rem;
+        font-size: 16px;
+    }
+
+    .transp-support {
+        top: 23.5rem;
+        width: 35%;
+        font-size: 16px;
+        border-right: 2px dashed #6C944C;
+    }
+
+    .transp-support p {
+        width: 95%;
+    }
+
+    .support_logo {
+        top: 10.3rem;
+        left: 4.5rem;
+        gap: 0.5rem;
+    }
+
+    .support_follow {
+        margin-top: 6.5rem;
+    }
+
+    .support_follow h4 {
+        padding-left: 2rem;
+        width: 95%;
+    }
+
+    #border-dotted-human {
+        width: 7rem;
+    }
+
+    #border-dotted-medicin {
+        width: 15.5rem;
+        top: 20rem;
+    }
+
+    #border-dotted-transp {
+        width: 13rem;
+    }
+
+    .section-content-doned {
+        padding: 3rem 2rem;
+    }
+
+    .doned-info {
+        background: linear-gradient(65deg, #FFDB4D 57%, transparent 94%);
+    }
+
+    .doned-h h5 {
+        font-size: 90px;
+    }
+
+    .doned-h h3 {
+        font-size: 33px;
+        width: 90%;
+    }
+
+    .btn_ziedot-doned {
+        margin: 4rem 0 0 3.25rem;
+    }
+
+    .questions-all div {
+        font-size: 23px;
+    }
+
+    .section_why-how {
+        height: 33rem;
+    }
+
+    .why_donate {
+        padding: 3rem 3rem 0 3rem;
+        margin: 0;
+    }
+
+    .why_donate h2 {
+        font-size: 30px;
+    }
+
+    .why_donate-p {
+        width: 80%;
+        margin-left: 3rem;
+    }
+
+    .why_donate-p p {
+        padding-left: 1.4rem;
+        margin: 0.7rem 0;
+        font-size: 23px;
+    }
+
+    .support_follow p {
+        padding-left: 1.4rem;
+        margin: 0.7rem 0;
+        font-size: 23px;
+    }
+
+    .section_partners {
+        padding: 4rem 3rem 3rem 3rem;
+    }
+
+    .partneri {
+        height: 28rem;
+    }
+
+    .fist-line_logo {
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .second-line_logo {
+        gap: 5.5rem;
+    }
+
+    .third-line_logo {
+        gap: 6rem;
+    }
+
+    #madara_logo,
+    #draugiem_logo,
+    #rtg_logo,
+    #lokalise_logo,
+    #twino_logo,
+    #dpd_logo {
+        width: 30%;
+    }
+
+    #gaso_logo,
+    #tilde_logo {
+        width: 15%;
+    }
+
+    .vairak a {
+        padding-top: 1rem;
+        font-size: 24px;
+    }
+
+    .section_questions {
+        padding: 4rem 3rem 3rem 3rem;
+    }
+
+    footer {
+        padding: 2rem 3rem 0 3rem;
+    }
+
+    .contacts {
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 701px) {
+    #logo-mob {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .panel {
+        max-width: 480px;
+    }
+
+    .header-content {
+        padding: 3.5rem 1rem 1.5rem 1rem;
+        margin: 0;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #logo-mob {
+        width: 3.125rem;
+    }
+
+    .carousel {
+        height: 25.6rem;
+    }
+
+    .carousel_img-support {
+        width: 40%;
+    }
+
+    .donate {
+        margin: 1.5rem 1.125rem 2rem 1.125rem;
+        width: auto;
+        height: auto;
+        right: 0;
+        left: 0;
+    }
+
+    .h1_p_wrapper {
+        padding: 1.5rem 1.3rem 2rem 1.3rem;
+    }
+
+    .donate h1 {
+        font-size: 34px;
+        line-height: 43px;
+    }
+
+    .thMeter_raised {
+        width: 90%;
+        margin-top: 1rem;
+    }
+
+    .thMeter_raised p {
+        font-size: 12px;
+        margin-block-start: 0.3rem;
+        margin-block-end: 0.25rem;
+    }
+
+    .btn_ziedot {
+        margin-top: 1.5rem;
+    }
+
+    #ziedot {
+        width: auto;
+    }
+
+    .section_why-how {
+        height: auto;
+    }
+
+    .why_donate {
+        padding: 2rem 1.5rem 0 1.5rem;
+        width: auto;
+    }
+
+    .why_donate-p {
+        padding: 0 1.5rem 0 0;
+        margin: 0 0 2rem 1.5rem;
+        width: auto;
+    }
+
+    .why_donate-p p {
+        font-size: 16px;
+        line-height: 25px;
+        padding-left: 0.8rem;
+    }
+
+    .why_donate h1 {
+        font-size: 26px;
+    }
+
+    .why_donate h4 {
+        font-size: 22px;
+        line-height: 28px;
+        margin: 1rem 0;
+    }
+
+    #border-solid_top {
+        width: 100%;
+    }
+
+    .section_support {
+        padding: 2rem 1.5rem 2rem 1.5rem;
+    }
+
+    .section_support h1 {
+        font-size: 26px;
+        line-height: 42px;
+    }
+
+    .support_wrapper h4 {
+        width: 100%;
+        font-size: 16px;
+        line-height: 25px;
+        margin: 1.5rem 0 3rem 0;
+    }
+
+    .support-what {
+        align-items: flex-start;
+    }
+
+    .support-what img:first-child {
+        width: 55%;
+        margin: 2.5rem 0 0 3rem;
+    }
+
+    .human-support {
+        width: 40%;
+        font-size: 10px;
+        line-height: 14px;
+        top: 0;
+    }
+
+    #border-dotted-human {
+        width: 6rem;
+    }
+
+    .medicin-support {
+        top: 5rem;
+        font-size: 10px;
+        line-height: 14px;
+        width: 31%;
+    }
+
+    #border-dotted-medicin {
+        width: 11rem;
+        top: 11.5rem;
+    }
+
+    .transp-support {
+        top: 16.5rem;
+        width: 11rem;
+    }
+
+    .transp-support p {
+        font-size: 10px;
+        line-height: 14px;
+        width: 80%;
+    }
+
+    #border-dotted-transp {
+        width: 11rem;
+    }
+
+    .support_follow p {
+        padding-left: 1.4rem;
+        margin: 0.7rem 0;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .support_logo {
+        top: 7.5rem;
+        left: -23px;
+        gap: 0.4rem;
+    }
+
+    .support_follow {
+        margin-top: 7.5rem;
+    }
+
+    .wrapper_doned {
+        height: 26.5rem;
+    }
+
+    .section-content-doned {
+        padding: 2rem 1.5rem;
+    }
+
+    .doned-h {
+        padding: 2rem 1rem 0 1rem;
+        gap: 0.5rem;
+    }
+
+    .section_doned h1 {
+        font-size: 36px;
+        line-height: 42px;
+        width: 80%;
+    }
+
+    .doned-h h5 {
+        font-size: 50px;
+        margin: 0.5rem 0;
+        text-shadow: -0.1rem 0.05rem #4257A6;
+    }
+
+    .doned-h h3 {
+        font-size: 18px;
+        line-height: 22px;
+        width: 80%;
+    }
+
+    .thMeter-doned {
+        width: 83%;
+        margin: 1.5rem 1rem 1rem 1rem;
+    }
+
+    .btn_ziedot-doned {
+        margin: 2.5rem 1rem;
+    }
+
+    #ziedot-doned {
+        font-size: 26px;
+        width: auto;
+        height: 2.75rem;
+    }
+
+    .section_partners {
+        padding: 1.6rem 1.5rem;
+    }
+
+    .section_partners h1 {
+        font-size: 26px;
+    }
+
+    .partneri {
+        height: auto;
+        margin-top: 1rem;
+    }
+
+    .partneri div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #madara_logo,
+    #draugiem_logo,
+    #rtg_logo,
+    #lokalise_logo,
+    #twino_logo,
+    #dpd_logo,
+    #gaso_logo,
+    #tilde_logo {
+        width: 50%;
+    }
+
+    #rtg_logo {
+        order: 1;
+        width: 90%;
+    }
+
+    #lokalise_logo {
+        order: 2;
+        width: 70%;
+    }
+
+    #tilde_logo {
+        order: 3;
+        width: 50%;
+    }
+
+    #twino_logo {
+        order: 4;
+        width: 70%;
+    }
+
+    .fist-line_logo {
+        gap: 0.5rem;
+    }
+
+    .second-line_logo {
+        gap: 3.5rem;
+    }
+
+    .third-line_logo {
+        gap: 4rem;
+    }
+
+    .section_questions {
+        padding: 4rem 2rem 3rem 2rem;
+    }
+
+    .section_questions h1 {
+        font-size: 49px;
+        line-height: 52px;
+        margin: 0;
+    }
+
+    .questions-all {
+        padding-left: 0;
+    }
+
+    .questions-all div {
+        font-size: 22px;
+        padding: 0.1rem 0 0.1rem 1rem;
+    }
+
+    .btn_ziedot-proj {
+        width: 14rem;
+    }
+
+    footer {
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    .contacts {
+        margin-top: 2rem;
+    }
+
+    .contacts p:not(:first-child) {
+        margin-top: 2rem;
+    }
+
+    #copy p {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 484px) {
+
+    .human-support {
+        width: 44%;
+    }
+
+    .medicin-support {
+        top: 4rem;
+        width: 30%;
+    }
+
+    .transp-support {
+        top: 13.5rem;
+    }
+
+    .transp-support p {
+        width: 70%;
+    }
+
+    #border-dotted-medicin {
+        width: 10rem;
+        top: 11.7rem;
+    }
+}
+
+@media screen and (max-width: 431px) {
+
+    .support-what img:first-child {
+        margin: 2.5rem 0 0 2rem;
+    }
+
+    .medicin-support {
+        top: 4rem;
+        width: 35%;
+    }
+
+    .transp-support {
+        top: 12.5rem;
+        width: 10rem;
+    }
+
+    #border-dotted-transp {
+        width: 10rem;
+    }
+
+    #border-dotted-medicin {
+        top: 11.7rem;
+    }
+}
+
+@media screen and (max-width: 416px) {
+
+    .support-what img:first-child {
+        margin: 3.5rem 0 0 2rem;
+    }
+
+    .human-support {
+        width: 40%;
+    }
+
+    .transp-support {
+        top: 13.5rem;
+        width: 9rem;
+    }
+
+    #border-dotted-transp {
+        width: 9rem;
+    }
+}
+
+@media screen and (max-width: 394px) {
+    .doned-h h5 {
+        font-size: 46px;
+    }
+
+    #border-dotted-medicin {
+        width: 8.5rem;
+    }
+
+}
+
+@media screen and (max-width: 384px) {
+    .carousel {
+        height: 28.6rem;
+    }
+
+    .doned-h h3 {
+        width: 90%;
+    }
+
+    .medicin-support {
+        width: 36%;
+    }
+
+    .transp-support {
+        top: 12.5rem;
+    }
+}
+
+@media screen and (max-width: 366px) {
+    .doned-h h5 {
+        font-size: 40px;
+    }
+}
+
+footer {
+    background-color: #4257A6;
+    font-family: 'Roboto';
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about img {
+    width: 6.25rem;
+}
+
+.social {
+    margin-top: 2rem;
+    width: 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+.contacts p:first-child {
+    font-size: 18px;
+}
+
+.copy {
+    text-align: center;
+    font-size: 14px;
+    color: #fff
+}
+
+hr {
+    border-color: #f4f4f4;
+    max-width: 1280px;
+}
